@@ -1,0 +1,73 @@
+@charset "UTF-8";
+.ic-party1{
+    background: url(../img/PartyLogo_dpp.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 18px;
+    width: 18px;
+    margin-right: 10px;
+    top: 2px;
+}
+.ic-party2{
+    background: url(../img/PartyLogo_kmt.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 18px;
+    width: 18px;
+    margin-right: 10px;
+    top: 2px;
+}
+.ic-party3{
+    background: url(../img/PartyLogo_npp.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 18px;
+    width: 18px;
+    margin-right: 10px;
+    top: 2px;
+}
+.ic-party4{
+    background: url(../img/PartyLogo_none.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 18px;
+    width: 18px;
+    margin-right: 10px;
+    top: 2px;
+}
+.ic-party5{
+    background: url(../img/PartyLogo_pfp.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 18px;
+    width: 18px;
+    margin-right: 10px;
+    top: 2px;
+}
+.ic-party6{
+    background: url(../img/PartyLogo_npsu.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 18px;
+    width: 18px;
+    margin-right: 10px;
+    top: 2px;
+}
+.ic-party7{
+    background: url(../img/PartyLogo_new.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 18px;
+    width: 18px;
+    margin-right: 10px;
+    top: 2px;
+}
+.ic-party8{
+    background: url(../img/PartyLogo_else.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 18px;
+    width: 18px;
+    margin-right: 10px;
+    top: 2px;
+}

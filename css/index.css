@@ -1,0 +1,33 @@
+@charset "UTF-8";
+/*首頁*/
+#index{
+	min-height: 100vh;
+	background: url(../img/bg-pattern.png);
+	background-repeat: repeat;
+	background-position: left top; 
+}
+.column-index{
+	border-radius: 5px;
+	background: rgba(255,255,255,0.6);
+
+}
+@media screen and (max-width: 767px) {
+
+}
+@media (min-width: 992px) {
+.column-index>div:nth-child(even){
+border-left: 1px solid #94a5a6;
+}
+}
+@media (min-width: 1200px) {
+	#index{
+	min-height: 100vh;
+	background: url(../img/bg-index.png),url(../img/bg-pattern.png);
+	background-repeat: no-repeat,repeat;
+	background-position: calc( 50vw - 680px) 0px, left top;
+}
+
+}
+.index-heigh{
+	margin-top: 10vh;
+}

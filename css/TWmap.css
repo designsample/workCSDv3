@@ -1,0 +1,112 @@
+@charset "UTF-8";
+
+/*臺灣地圖*/
+
+#TPE:hover>path,
+#NTP:hover>path,
+#KL:hover>path,
+#TYC:hover>path,
+#XZ:hover>path,
+#XZC:hover>path,
+#MEW:hover>path,
+#TCC:hover>path,
+#CHC:hover>path,
+#CH:hover>path,
+#YL:hover>path,
+#CYC:hover>path,
+#CY:hover>path,
+#TNC:hover>path,
+#KSC:hover>path,
+#PT:hover>path,
+#TD:hover>path,
+#HL:hover>path,
+#YEL:hover>path,
+#NT:hover>path,
+#L1:hover>path,
+#L2:hover>path,
+#L3:hover>path,
+#MZ:hover>polygon,
+#KM:hover>path,
+#OR:hover>circle,
+#NO:hover>circle {
+    cursor: pointer;
+    fill: #18BC9C !important;
+}
+
+#OR:hover>text,
+#NO:hover>text {
+    cursor: pointer;
+    text-decoration: underline;
+}
+#TPE:active>path,
+#NTP:active>path,
+#KL:active>path,
+#TY:active>path,
+#TYC:active>path,
+#XZ:active>path,
+#XZC:active>path,
+#MEW:active>path,
+#TCC:active>path,
+#CHC:active>path,
+#CH:active>path,
+#YL:active>path,
+#CY:active>path,
+#CYC:active>path,
+#TNC:active>path,
+#KSC:active>path,
+#PT:active>path,
+#TD:active>path,
+#HL:active>path,
+#YEL:active>path,
+#NT:active>path,
+#L1:active>path,
+#L2:active,
+#L3:active,
+#MZ:active>polygon,
+#KM:active>path,
+#OR:active>circle,
+#NO:active>circle {
+    cursor: pointer;
+    fill: #128f76 !important;
+}
+[id^="T_"]{
+    cursor: pointer;
+    fill: #2C3E50;
+    font-size: 18px;
+}
+[id^="T_"]:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    fill: black;
+    font-size: 18px;
+}
+
+@media screen and (max-width: 767px) {
+    #TWmap {
+        width: 100%;
+        height: auto;
+    }
+    [id^="T_"]{
+    font-size: 28px;
+    fill: #2C3E50;
+}
+[id^="T_"]:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    fill: black;
+    font-size: 28px;
+}
+}
+
+
+@media (min-width: 767px) {
+    #TWmap {
+        width: 66.66666667%;
+        height: auto;
+        float: left;
+    }
+}
+
+@media (min-width: 992px) {}
+
+@media (min-width: 1200px) {}

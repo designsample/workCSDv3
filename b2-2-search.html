@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <link rel="shortcut icon" type="image/x-icon" href="img/ic_fav.png" />
+    <link rel="bookmark" href="img/ic_fav.png" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>法人科專資訊整合平台</title>
+    <meta name="keywords" content="法人科專資訊整合平台,CSD,資訊整合平台,法人科專" />
+    <meta name="description" content="法人科專資訊整合平台" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--     <link rel="stylesheet" href="css/docs.theme.min.css"> -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/chosen.css">
+    <!--[if lt IE 9]>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script src="js/jquery.min.js"></script>
+    <!--js順序有差要注意-->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/miller_code.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-light bg-header" role="navigation">
+        <div class="container container-CSD">
+            <div class="navbar-header">
+                <h1 class="logo m-0"><a class="navbar-brand" href="index.html"><img id="logoImg" alt="全國新書資訊網logo" src="img/logo-2.png"></a></h1>
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">主功能列</span>
+                    <span class="glyphicon glyphicon-menu-hamburger"></span>
+                    <span class="icon-text">主功能</span>
+                </button>
+            </div>
+            <!-- 手機隱藏選單區 -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse wrapper-menu">
+                <!-- 主選單 -->
+                <ul class="nav navbar-nav navbar-right main-menu">
+                    <li><a href="index.html"><span class="glyphicon glyphicon-home"></span>首頁</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-briefcase"></span>關注議題<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <!-- <li><a href="b1-1-top.html">焦點議題 Top</a></li> -->
+                            <li><a href="b2-1-search.html">議題查詢</a></li>
+                            <li><a href="b4-1-analysis.html">議題分析</a></li>
+                            <li><a href="b5-1-legislator.html">立委專區</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-flash"></span>研發成果<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="">焦點成果</a></li>
+                            <li><a href="">成果查詢</a></li>
+                            <li><a href="">成果分析</a></li>
+                            <li><a href="">產業應用</a></li>
+                            <li><a href="">廠商專區</a></li>
+                        </ul>
+                    </li>
+                    <!-- <li><a href=""><span class="glyphicon glyphicon-dashboard"></span>DASHBOARD</a></li> -->
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-question-sign"></span>平台介紹<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="">操作手冊</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-cog"></span>後台管理<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="index.html"><img class="media-object img-round" src="img/ic-head.png" alt="個人照片" height="36px" width="36px" style="display: inline-block;">帳戶管理</a></li>
+                            <li><a href="http://59.120.40.187/html/tdp/manage/p2.html">系統管理</a></li>
+                            <li><a href="index.html">登出</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="btn-group btn-group-toggle font-sizeGroup" data-toggle="buttons">
+                            <label class="btn btn-info btn-sm">
+                                <input type="radio" name="options" id="option1" autocomplete="off">大
+                            </label>
+                            <label class="btn btn-info active btn-sm">
+                                <input type="radio" name="options" id="option2" autocomplete="off" checked="checked">中
+                            </label>
+                            <label class="btn btn-info btn-sm">
+                                <input type="radio" name="options" id="option3" autocomplete="off">小
+                            </label>
+                        </div>
+                    </li>
+                    <!-- <li class="dropdown">   
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-eye-open">&ensp;</span>大項次 
+                            <b class="caret"></b></a>   
+                        <ul class="dropdown-menu">
+                            <li><a href="">次項目</a></li>
+                            <li><a href="">次項目</a></li>
+                        </ul>
+                    </li> -->
+                </ul>
+            </div>
+            <!-- 手機隱藏選單區結束 -->
+            <script type="text/javascript">
+            var $ofweidht = innerWidth; //取得螢幕寬度
+            if ($ofweidht <= 768) { //設定判斷條件，大於等於1280時frametop的CSS屬性為block
+                document.getElementById("logoImg").src = 'img/logo-small.png';
+            } else {
+                document.getElementById("logoImg").src = 'img/logo.png';
+            }
+            </script>
+        </div>
+    </nav>
+    <!--nav結束-->
+    <section class="sectionMain">
+        <div class="row m-0">
+            <div id="mySidenav" class="col-xs-12 col-sm-3 sidenav">
+                <ul class="nav nav-tabs tab-side">
+                    <!-- <li>
+                        <a href="b1-1-top.html" class="h3" aria-controls="焦點議題">焦點議題</a>
+                    </li> -->
+                    <li class="active">
+                        <a href="b2-1-search.html" class="h3" aria-controls="議題查詢">議題查詢</a>
+                    </li>
+                    <li>
+                        <a href="b4-1-analysis.html" class="h3" aria-controls="議題分析">議題分析</a>
+                    </li>
+                    <li>
+                        <a href="b5-1-legislator.html" class="h3" aria-controls="立委專區">立委專區</a>
+                    </li>
+                </ul>
+            </div>
+            <div id="mySidenavRight" class="col-xs-12 col-sm-9">
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs pt-10" role="tablist">
+                    <li role="presentation" class="active"><a href="#search" aria-controls="議題查詢Search" role="tab" data-toggle="tab" class="h3">議題查詢</a></li>
+                </ul>
+                <!-- Tab panes -->
+                <div class="tab-content tab-sideContentSec">
+                    <div role="tabpanel" class="tab-pane active" id="search">
+                        <div class="row pb-20">
+                            <div class="col-xs-12">
+                                <div class="col-xs-12 col-lg-6">
+                                    <div class="form-group col-xs-12 p-0">
+                                        <label class="control-label col-xs-4 col-md-2 col-lg-3 p-0">議題年度</label>
+                                        <div class="form-inline inline-block col-xs-8 col-md-10 col-lg-9 p-0">
+                                            <select title="yearA" class="from-control col-xs-12 col-md-5">
+                                                <option value="96">96</option>
+                                                <option value="97">97</option>
+                                                <option value="98">98</option>
+                                                <option value="99">99</option>
+                                                <option value="100">100</option>
+                                                <option value="101">101</option>
+                                                <option value="102">102</option>
+                                                <option value="103">103</option>
+                                                <option value="104">104</option>
+                                                <option value="105">105</option>
+                                                <option value="106" selected="selected">106</option>
+                                            </select>
+                                            <div class="form-inline inline-block text-center col-xs-12 col-md-2">
+                                                <label class="">~</label>
+                                            </div>
+                                            <select title="yearB" class="from-control col-xs-12 col-md-5">
+                                                <option value="96">96</option>
+                                                <option value="97">97</option>
+                                                <option value="98">98</option>
+                                                <option value="99">99</option>
+                                                <option value="100">100</option>
+                                                <option value="101">101</option>
+                                                <option value="102">102</option>
+                                                <option value="103">103</option>
+                                                <option value="104">104</option>
+                                                <option value="105">105</option>
+                                                <option value="106" selected="selected">106</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-lg-6">
+                                    <div class="form-group col-xs-12 p-0">
+                                        <label for="searchWords" class="control-label col-xs-4 col-md-2 col-lg-3p-0">查詢字串</label>
+                                        <div class="form-inline inline-block col-xs-8 col-md-10 col-lg-9 p-0">
+                                            <input type="text" id="searchWords" name="" class="from-control col-xs-12 p-0">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-lg-6">
+                                    <div class="form-group col-xs-12 p-0">
+                                        <label for="issue" class="control-label col-xs-4 col-md-2 col-lg-3 p-0">議題</label>
+                                        <div class="form-inline inline-block col-xs-8 col-md-10 col-lg-9 p-0">
+                                            <input type="text" id="issue" name="" class="from-control col-xs-12 p-0">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-lg-6">
+                                    <div class="form-group col-xs-12 p-0">
+                                        <label for="reply" class="control-label col-xs-4 col-md-2 col-lg-3 p-0">回覆</label>
+                                        <div class="form-inline inline-block col-xs-8 col-md-10 col-lg-9 p-0">
+                                            <input type="text" id="reply" name="" class="from-control col-xs-12 p-0">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-lg-6">
+                                    <div class="form-group col-xs-12 p-0">
+                                        <label for="department" class="control-label col-xs-4 col-md-2 col-lg-3 p-0">提案單位</label>
+                                        <div class="form-inline inline-block col-xs-8 col-md-10 col-lg-9 p-0">
+                                            <select id="department" title="department" class="from-control col-xs-12 p-0">
+                                                <option value="全選" selected="selected">全選</option>
+                                                <option value="立院黨團提案">立院黨團提案</option>
+                                                <option value="委員會提案">委員會提案</option>
+                                                <option value="委員提案">委員提案</option>
+                                                <option value="監察院">監察院</option>
+                                                <option value="立法院預算中心">立法院預算中心</option>
+                                                <option value="其他">其他</option>
+                                                <option value="無">無</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-lg-6">
+                                    <div class="form-group col-xs-12 p-0">
+                                        <label for="legislatorA" class="control-label col-xs-4 col-md-2 col-lg-3 p-0">提案委員</label>
+                                        <div id="legislatorA" class="form-inline inline-block col-xs-8 col-md-10 col-lg-9 p-0">
+                                            <script>
+                                                $(function(){
+                                                    $('.myselect').chosen();
+                                                });
+                                                $(function(){
+                                                    $('.myselect').chosen({
+                                                        search_contains: true
+                                                    });
+                                                    $(".myselect").chosen({
+                                                    search_contains: true,
+                                                });
+                                                });
+                                            </script>
+                                            <select data-placeholder="輸入姓名，可複選" id="myselect" class="from-control col-xs-12 p-0 myselect" multiple >
+                                                <option value="全選">全選</option>
+                                                <option value="吳思瑤">吳思瑤</option>
+                                                <option value="姚文智">姚文智</option>
+                                                <option value="蔣萬安">蔣萬安</option>
+                                                <option value="李彥秀">李彥秀</option>
+                                                <option value="林昶佐">林昶佐</option>
+                                                <option value="蔣乃辛">蔣乃辛</option>
+                                                <option value="費鴻泰">費鴻泰</option>
+                                                <option value="賴士葆">賴士葆</option>
+                                                <option value="呂孫綾">呂孫綾</option>
+                                                <option value="林淑芬">林淑芬</option>
+                                                <option value="高志鵬">高志鵬</option>
+                                                <option value="吳秉叡">吳秉叡</option>
+                                                <option value="蘇巧慧">蘇巧慧</option>
+                                                <option value="張宏陸">張宏陸</option>
+                                                <option value="羅致政">羅致政</option>
+                                                <option value="江永昌">江永昌</option>
+                                                <option value="林德福">林德福</option>
+                                                <option value="吳琪銘">吳琪銘</option>
+                                                <option value="羅明才">羅明才</option>
+                                                <option value="黃國昌">黃國昌</option>
+                                                <option value="蔡適應">蔡適應</option>
+                                                <option value="鄭運鵬">鄭運鵬</option>
+                                                <option value="陳賴素美">陳賴素美</option>
+                                                <option value="陳學聖">陳學聖</option>
+                                                <option value="鄭寶清">鄭寶清</option>
+                                                <option value="呂玉玲">呂玉玲</option>
+                                                <option value="趙正宇">趙正宇</option>
+                                                <option value="林為洲">林為洲</option>
+                                                <option value="柯建銘">柯建銘</option>
+                                                <option value="陳超明">陳超明</option>
+                                                <option value="徐志榮">徐志榮</option>
+                                                <option value="蔡其昌">蔡其昌</option>
+                                                <option value="顏寬恆">顏寬恆</option>
+                                                <option value="洪慈庸">洪慈庸</option>
+                                                <option value="張廖萬堅">張廖萬堅</option>
+                                                <option value="盧秀燕">盧秀燕</option>
+                                                <option value="黃國書">黃國書</option>
+                                                <option value="何欣純">何欣純</option>
+                                                <option value="江啟臣">江啟臣</option>
+                                                <option value="王惠美">王惠美</option>
+                                                <option value="黃秀芳">黃秀芳</option>
+                                                <option value="洪宗熠">洪宗熠</option>
+                                                <option value="陳素月">陳素月</option>
+                                                <option value="馬文君">馬文君</option>
+                                                <option value="許淑華">許淑華</option>
+                                                <option value="蘇治芬">蘇治芬</option>
+                                                <option value="劉建國">劉建國</option>
+                                                <option value="蔡易餘">蔡易餘</option>
+                                                <option value="陳明文">陳明文</option>
+                                                <option value="李俊俋">李俊俋</option>
+                                                <option value="葉宜津">葉宜津</option>
+                                                <option value="黃偉哲">黃偉哲</option>
+                                                <option value="陳亭妃">陳亭妃</option>
+                                                <option value="林俊憲">林俊憲</option>
+                                                <option value="王定宇">王定宇</option>
+                                                <option value="邱議瑩">邱議瑩</option>
+                                                <option value="邱志偉">邱志偉</option>
+                                                <option value="劉世芳">劉世芳</option>
+                                                <option value="林岱樺">林岱樺</option>
+                                                <option value="管碧玲">管碧玲</option>
+                                                <option value="李昆澤">李昆澤</option>
+                                                <option value="趙天麟">趙天麟</option>
+                                                <option value="許智傑">許智傑</option>
+                                                <option value="賴瑞隆">賴瑞隆</option>
+                                                <option value="蘇震清">蘇震清</option>
+                                                <option value="鍾佳濱">鍾佳濱</option>
+                                                <option value="莊瑞雄">莊瑞雄</option>
+                                                <option value="陳歐珀">陳歐珀</option>
+                                                <option value="蕭美琴">蕭美琴</option>
+                                                <option value="劉櫂豪">劉櫂豪</option>
+                                                <option value="楊曜">楊曜</option>
+                                                <option value="楊鎮浯">楊鎮浯</option>
+                                                <option value="陳雪生">陳雪生</option>
+                                                <option value="吳焜裕">吳焜裕</option>
+                                                <option value="吳玉琴">吳玉琴</option>
+                                                <option value="陳曼麗">陳曼麗</option>
+                                                <option value="蔡培慧">蔡培慧</option>
+                                                <option value="王榮璋">王榮璋</option>
+                                                <option value="余宛如">余宛如</option>
+                                                <option value="蘇嘉全">蘇嘉全</option>
+                                                <option value="段宜康">段宜康</option>
+                                                <option value="陳其邁">陳其邁</option>
+                                                <option value="尤美女">尤美女</option>
+                                                <option value="鍾孔炤">鍾孔炤</option>
+                                                <option value="林靜儀">林靜儀</option>
+                                                <option value="周春米">周春米</option>
+                                                <option value="施義芳">施義芳</option>
+                                                <option value="李麗芬">李麗芬</option>
+                                                <option value="郭正亮">郭正亮</option>
+                                                <option value="邱泰源">邱泰源</option>
+                                                <option value="蔣絜安">蔣絜安</option>
+                                                <option value="王金平">王金平</option>
+                                                <option value="柯志恩">柯志恩</option>
+                                                <option value="陳宜民">陳宜民</option>
+                                                <option value="林麗蟬">林麗蟬</option>
+                                                <option value="許毓仁">許毓仁</option>
+                                                <option value="曾銘宗">曾銘宗</option>
+                                                <option value="黃昭順">黃昭順</option>
+                                                <option value="吳志揚">吳志揚</option>
+                                                <option value="張麗善">張麗善</option>
+                                                <option value="徐榛蔚">徐榛蔚</option>
+                                                <option value="王育敏">王育敏</option>
+                                                <option value="李鴻鈞">李鴻鈞</option>
+                                                <option value="陳怡潔">陳怡潔</option>
+                                                <option value="周陳秀霞">周陳秀霞</option>
+                                                <option value="高潞．以用．巴魕剌">高潞．以用．巴魕剌</option>
+                                                <option value="徐永明">徐永明</option>
+                                                <option value="鄭天財">鄭天財</option>
+                                                <option value="廖國棟">廖國棟</option>
+                                                <option value="陳瑩">陳瑩</option>
+                                                <option value="高金素梅">高金素梅</option>
+                                                <option value="簡東明">簡東明</option>
+                                                <option value="孔文吉">孔文吉</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-lg-6">
+                                    <div class="form-group col-xs-12 p-0">
+                                        <label for="issueType" class="control-label col-xs-4 col-md-2 col-lg-3 p-0">議題類別</label>
+                                        <div class="form-inline inline-block col-xs-8 col-md-10 col-lg-9 p-0">
+                                            <select id="issueType" title="issueType" class="from-control col-xs-12 p-0">
+                                                <option value="全選" selected="selected">全選</option>
+                                                <option value="國會輿情">國會輿情</option>
+                                                <option value="臨時增列題庫">臨時增列題庫</option>
+                                                <option value="立法院模擬題庫">立法院模擬題庫</option>
+                                                <option value="部次長承諾事項">部次長承諾事項</option>
+                                                <option value="委員會臨時提案">委員會臨時提案</option>
+                                                <option value="立法委員請託事項">立法委員請託事項</option>
+                                                <option value="立法委員洽索資料">立法委員洽索資料</option>
+                                                <option value="預算相關議題">預算相關議題</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-lg-6">
+                                    <div class="form-group col-xs-12 p-0">
+                                        <label for="ImplementedBy" class="control-label col-xs-4 col-md-2 col-lg-3 p-0">承辦科別</label>
+                                        <div class="form-inline inline-block col-xs-8 col-md-10 col-lg-9 p-0">
+                                            <select id="ImplementedBy" title="ImplementedBy" class="from-control col-xs-12 p-0">
+                                                <option value="全選" selected="selected">全選</option>
+                                                <option value="科部甲">科部甲</option>
+                                                <option value="科部乙">科部乙</option>
+                                                <option value="科部丙">科部丙</option>
+                                                <option value="科部丁">科部丁</option>
+                                                <option value="科部戊">科部戊</option>
+                                                <option value="科部己">科部己</option>
+                                                <option value="科部庚">科部庚</option>
+                                                <option value="科部辛">科部辛</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-lg-6">
+                                    <div class="form-group col-xs-12 p-0">
+                                        <label for="ImplementedByWho" class="control-label col-xs-4 col-md-2 col-lg-3 p-0">承辦人員</label>
+                                        <div class="form-inline inline-block col-xs-8 col-md-10 col-lg-9 p-0">
+                                            <select id="ImplementedByWho" title="ImplementedByWho" class="from-control col-xs-12 p-0">
+                                                <option value="全選" selected="selected">全選</option>
+                                                <option value="科部甲">人員甲</option>
+                                                <option value="科部乙">人員乙</option>
+                                                <option value="科部丙">人員丙</option>
+                                                <option value="科部丁">人員丁</option>
+                                                <option value="科部戊">人員戊</option>
+                                                <option value="科部己">人員己</option>
+                                                <option value="科部庚">人員庚</option>
+                                                <option value="科部辛">人員辛</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-lg-6">
+                                    <div class="form-group col-xs-12 p-0">
+                                        <label for="keyWords" class="control-label col-xs-4 col-md-2 col-lg-3 p-0">關鍵字</label>
+                                        <div class="form-inline inline-block col-xs-8 col-md-10 col-lg-9 p-0">
+                                            <input type="text" id="keyWords" name="" class="from-control col-xs-12 p-0">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12">
+                                    <a href="b2-1-search.html" role="button" class="btn btn-info pull-right">簡易查詢</a>
+                                    <a href="b2-1-1-search.html" class="btn btn-info pull-right mr-10" role="button">查詢</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- / row 檢索區 -->
+                        <div class="row" id="issueArea">
+                            <div class="col-xs-12 hidden-xs">
+                                <div class="col-xs-12 col-sm-6 col-lg-4 pb-20">
+                                    <div class="card border-secondary issueCard">
+                                        <div class="card-header h5" id="changeIS_1"><a role="button" data-toggle="collapse" href="#IS_1" aria-expanded="false" aria-controls="IS_1">國會輿情</a></div>
+                                        <div class="card-body" role="tablist">
+                                            <div id="IS_1" class="list-group collapse">
+                                                <a href="b2-1-2-searchResault.html" class="list-group-item">科專政策與推動</a>
+                                                <a href="b2-1-2-searchResault.html" class="list-group-item">研發法人管理</a>
+                                                <a href="b2-1-2-searchResault.html" class="list-group-item">科專計畫管理</a>
+                                                <a href="b2-1-2-searchResault.html" class="list-group-item">電資通光技術</a>
+                                                <a href="#IS_1_1" class="list-group-item" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="IS_1_1">機電運輸技術<span class="glyphicon glyphicon-triangle-bottom"></span></a>
+                                                <div id="IS_1_1" class="list-group collapse">
+                                                    <a href="b2-1-2-searchResault.html" class="list-group-item">無人載具條例</a>
+                                                    <a href="b2-1-2-searchResault.html" class="list-group-item">智慧製造</a>
+                                                    <a href="b2-1-2-searchResault.html" class="list-group-item">智慧移動</a>
+                                                </div>
+                                                <a href="#" class="list-group-item">生醫材化技術</a>
+                                                <a href="#" class="list-group-item">前瞻創新服務</a>
+                                            </div>
+                                            <div class="list-group">
+                                                <a href="b2-1-2-searchResault.html" class="list-group-item">1.1&ensp;107年度技術處預算編列及分配情形</a>
+                                                <a href="b2-1-2-searchResault.html" class="list-group-item">2.1&ensp;我國產業科技發展政策及技術處施政重點</a>
+                                                <a href="b2-1-2-searchResault.html" class="list-group-item">2.2&ensp;研究機構財團法人從事兩岸產業合作注意事項</a>
+                                            </div>
+                                            <div class="text-center">
+                                                <a href="">看更多</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-lg-4 pb-20">
+                                    <div class="card border-secondary issueCard">
+                                        <div class="card-header h5" id="changeIS_2"><a role="button" data-toggle="collapse" href="#IS_2" aria-expanded="false" aria-controls="IS_2">立法院會期技術處模擬題庫</a></div>
+                                        <div class="card-body" role="tablist">
+                                            <div id="IS_2" class="list-group collapse">
+                                                <a href="b2-1-2-searchResault.html" class="list-group-item">年度科專預算編列說明及執行情形</a>
+                                                <a href="b2-1-2-searchResault.html" class="list-group-item">科專政策</a>
+                                                <a href="#IS_2_1" class="list-group-item" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="IS_2_1">科專績效<span class="glyphicon glyphicon-triangle-bottom"></span></a>
+                                                <div id="IS_2_1" class="list-group collapse">
+                                                    <a href="b2-1-2-searchResault.html" class="list-group-item">4-3-001 105年度科技專案執行成果之運用說明</a>
+                                                    <a href="b2-1-2-searchResault.html" class="list-group-item">4-3-002 科技專案執行機構之績效指標規劃及績效考評作法說明</a>
+                                                    <a href="b2-1-2-searchResault.html" class="list-group-item">4-3-003 財團法人之年度政府補助及民間收入比例議題</a>
+                                                    <a href="b2-1-2-searchResault.html" class="list-group-item">4-3-004 工研院預算及科專執行績效</a>
+                                                    <a href="b2-1-2-searchResault.html" class="list-group-item">4-3-005 因應我國產業技術貿易逆差強化產業技術研發布局</a>
+                                                </div>
+                                                <a href="b2-1-2-searchResault.html" class="list-group-item">承接科專財團法人議題</a>
+                                                <a href="b2-1-2-searchResault.html" class="list-group-item">科專之法規、制度、管理、管制面</a>
+                                                <a href="b2-1-2-searchResault.html" class="list-group-item">電資通光</a>
+                                                <a href="b2-1-2-searchResault.html" class="list-group-item">機電運輸</a>
+                                                <a href="b2-1-2-searchResault.html" class="list-group-item">生技製藥</a>
+                                                <a href="b2-1-2-searchResault.html" class="list-group-item">傳統產業、中小企業及服務業</a>
+                                                <a href="b2-1-2-searchResault.html" class="list-group-item">學界業科專</a>
+                                                <a href="b2-1-2-searchResault.html" class="list-group-item">五加二創新產業</a>
+                                                <a href="b2-1-2-searchResault.html" class="list-group-item">地方關切及原住民議題</a>
+                                                <a href="b2-1-2-searchResault.html" class="list-group-item">其他</a>
+                                            </div>
+                                            <div class="list-group">
+                                                <a href="b2-1-2-searchResault.html" class="list-group-item">1.1&ensp;107年度技術處預算編列及分配情形</a>
+                                                <a href="b2-1-2-searchResault.html" class="list-group-item">2.1&ensp;我國產業科技發展政策及技術處施政重點</a>
+                                                <a href="b2-1-2-searchResault.html" class="list-group-item">2.2&ensp;研究機構財團法人從事兩岸產業合作注意事項</a>
+                                            </div>
+                                            <div class="text-center">
+                                                <a href="">看更多</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-lg-4 pb-20">
+                                    <div class="card border-secondary issueCard">
+                                        <div class="card-header h5" id="changeIS_3"><a role="button" data-toggle="collapse" href="#IS_3" aria-expanded="false" aria-controls="IS_3">立法委員請託事項</a></div>
+                                        <div class="card-body" role="tablist">
+                                            <div id="IS_3" class="list-group collapse">
+                                                <a href="b2-1-2-searchResault.html" class="list-group-item">科專政策</a>
+                                                <a href="#IS_3_1" class="list-group-item" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="IS_3_1">科專績效<span class="glyphicon glyphicon-triangle-bottom"></span></a>
+                                                <div id="IS_3_1" class="list-group collapse">
+                                                    <a href="b2-1-2-searchResault.html" class="list-group-item">4-3-001 105年度科技專案執行成果之運用說明</a>
+                                                    <a href="b2-1-2-searchResault.html" class="list-group-item">4-3-002 科技專案執行機構之績效指標規劃及績效考評作法說明</a>
+                                                    <a href="b2-1-2-searchResault.html" class="list-group-item">4-3-003 財團法人之年度政府補助及民間收入比例議題</a>
+                                                    <a href="b2-1-2-searchResault.html" class="list-group-item">4-3-004 工研院預算及科專執行績效</a>
+                                                    <a href="b2-1-2-searchResault.html" class="list-group-item">4-3-005 因應我國產業技術貿易逆差強化產業技術研發布局</a>
+                                                </div>
+                                                <a href="b2-1-2-searchResault.html" class="list-group-item">承接科專財團法人議題</a>
+                                                <a href="b2-1-2-searchResault.html" class="list-group-item">科專之法規、制度、管理、管制面</a>
+                                                <a href="b2-1-2-searchResault.html" class="list-group-item">電資通光</a>
+                                                <a href="b2-1-2-searchResault.html" class="list-group-item">其他</a>
+                                            </div>
+                                            <div class="list-group">
+                                                <a href="b2-1-2-searchResault.html" class="list-group-item">1.1&ensp;經濟部推動法人革新之策略與作法</a>
+                                                <a href="b2-1-2-searchResault.html" class="list-group-item">1.2&ensp;經濟部中台灣創新園區後續營運規劃與策略</a>
+                                                <a href="b2-1-2-searchResault.html" class="list-group-item">1.3&ensp;科技專案協助中小企業輔導成果</a>
+                                            </div>
+                                            <div class="text-center">
+                                                <a href="">看更多</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-lg-4 pb-20">
+                                    <div class="card border-secondary issueCard">
+                                        <div class="card-header h5" id="changeIS_4"><a role="button" data-toggle="collapse" href="#IS_4" aria-expanded="false" aria-controls="IS_4">部次長承諾事項</a></div>
+                                        <div class="card-body" role="tablist">
+                                            <h4 class="card-title"></h4>
+                                            <div id="IS_4" class="list-group collapse">
+                                                <a href="#" class="list-group-item">科專政策</a>
+                                                <a href="#IS_4_1" class="list-group-item" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="IS_4_1">科專績效<span class="glyphicon glyphicon-triangle-bottom"></span></a>
+                                                <div id="IS_4_1" class="list-group collapse">
+                                                    <a href="#" class="list-group-item">4-3-001 105年度科技專案執行成果之運用說明</a>
+                                                    <a href="#" class="list-group-item">4-3-002 科技專案執行機構之績效指標規劃及績效考評作法說明</a>
+                                                    <a href="#" class="list-group-item">4-3-003 財團法人之年度政府補助及民間收入比例議題</a>
+                                                    <a href="#" class="list-group-item">4-3-004 工研院預算及科專執行績效</a>
+                                                    <a href="#" class="list-group-item">4-3-005 因應我國產業技術貿易逆差強化產業技術研發布局</a>
+                                                </div>
+                                                <a href="#" class="list-group-item"></a>
+                                                <a href="#IS_4_2" class="list-group-item" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="IS_4_2">承接科專財團法人議題<span class="glyphicon glyphicon-triangle-bottom"></span></a>
+                                                <div id="IS_4_2" class="list-group collapse">
+                                                    <a href="#" class="list-group-item">4-3-001 105年度科技專案執行成果之運用說明</a>
+                                                    <a href="#" class="list-group-item">4-3-002 科技專案執行機構之績效指標規劃及績效考評作法說明</a>
+                                                    <a href="#" class="list-group-item">4-3-003 財團法人之年度政府補助及民間收入比例議題</a>
+                                                    <a href="#" class="list-group-item">4-3-004 工研院預算及科專執行績效</a>
+                                                    <a href="#" class="list-group-item">4-3-005 因應我國產業技術貿易逆差強化產業技術研發布局</a>
+                                                </div>
+                                                <a href="#" class="list-group-item">電資通光</a>
+                                                <a href="#" class="list-group-item">其他</a>
+                                            </div>
+                                            <div class="list-group">
+                                                <a href="#" class="list-group-item">2.1&ensp;科專執行智慧財產布局策略</a>
+                                                <a href="#" class="list-group-item">2.1&ensp;區域創新能量建構推動作為</a>
+                                                <a href="#" class="list-group-item">3.1&ensp;105年度科技專案執行成果之運用說明</a>
+                                            </div>
+                                            <div class="text-center">
+                                                <a href="">看更多</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-lg-4 pb-20">
+                                    <div class="card border-secondary issueCard">
+                                        <div class="card-header h5" id="changeIS_5"><a role="button" data-toggle="collapse" href="#IS_5" aria-expanded="false" aria-controls="IS_5">預算相關之可能關切議題</a></div>
+                                        <div class="card-body" role="tablist">
+                                            <div id="IS_5" class="list-group collapse">
+                                                <a href="#" class="list-group-item">電資通光技術</a>
+                                                <a href="#IS_5_1" class="list-group-item" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="IS_5_1">機電運輸技術<span class="glyphicon glyphicon-triangle-bottom"></span></a>
+                                                <div id="IS_5_1" class="list-group collapse">
+                                                    <a href="#" class="list-group-item">無人載具條例</a>
+                                                    <a href="#" class="list-group-item">智慧製造</a>
+                                                    <a href="#" class="list-group-item">智慧移動</a>
+                                                </div>
+                                                <a href="#" class="list-group-item">生醫材化技術</a>
+                                                <a href="#" class="list-group-item">前瞻創新服務</a>
+                                            </div>
+                                            <div class="list-group">
+                                                <a href="#" class="list-group-item">1.&ensp;經濟部107年度歲出預算第3目「科技專案」編列162億8,058萬1千元，…</a>
+                                                <a href="#" class="list-group-item">2.&ensp;法人科專計畫依計畫屬性區隔...關鍵技術主要係開發未來產業發展所必須…</a>
+                                                <a href="#" class="list-group-item">3.&ensp;經濟部學界開發產業技術計畫及產學…</a>
+                                            </div>
+                                            <div class="text-center">
+                                                <a href="">看更多</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-lg-4 pb-20">
+                                    <div class="card border-secondary issueCard">
+                                        <div class="card-header h5" id="changeIS_6"><a role="button" data-toggle="collapse" href="#IS_6" aria-expanded="false" aria-controls="IS_6">委員會臨時提案</a></div>
+                                        <div class="card-body" role="tablist">
+                                            <div id="IS_6" class="list-group collapse">
+                                                <a href="#" class="list-group-item">科專政策與推動</a>
+                                                <a href="#" class="list-group-item">研發法人管理</a>
+                                                <a href="#" class="list-group-item">科專計畫管理</a>
+                                                <a href="#" class="list-group-item">電資通光技術</a>
+                                                <a href="#IS_6_1" class="list-group-item" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="IS_6_1">機電運輸技術<span class="glyphicon glyphicon-triangle-bottom"></span></a>
+                                                <div id="IS_6_1" class="list-group collapse">
+                                                    <a href="#" class="list-group-item">無人載具條例</a>
+                                                    <a href="#" class="list-group-item">智慧製造</a>
+                                                    <a href="#" class="list-group-item">智慧移動</a>
+                                                </div>
+                                            </div>
+                                            <div class="list-group">
+                                                <a href="#" class="list-group-item">105年有關經濟部提升中小企業技術提升轉型或品牌扶植經營之相關政策計畫、科專計畫、法規鬆綁、預算補助、租稅優惠與具體成效…</a>
+                                            </div>
+                                            <div class="text-center">
+                                                <a href="">看更多</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- / 六大區塊 -->
+                            </div>
+                            <!-- / 大尺寸會出現的 內層包包 -->
+                            
+                         
+                            <div class="col-xs-12 visible-xs pt-20">
+                                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                                    <div class="panel panel-default panel-doubleCollapse">
+                                        <div class="panel-heading" role="tab" id="headingXsOne">
+                                            <h4 class="panel-title">
+                                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseXsOne" aria-expanded="true" aria-controls="collapseXsOne">
+                                                    國會輿情
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseXsOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingXsOne">
+                                            <ul class="list-group">
+                                                <li class="list-group-item">
+                                                    <h4 class="panel-linktitle"><a href="b2-1-2-searchResault.html" title="" class="">科專政策與推動</a></h4>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <h4 class="panel-linktitle"><a href="b2-1-2-searchResault.html" title="" class="">研發法人管理</a></h4>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <h4 class="panel-linktitle"><a href="b2-1-2-searchResault.html" title="" class="">科專計畫管理</a></h4>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <h4 class="panel-linktitle"><a href="b2-1-2-searchResault.html" title="" class="">電資通光技術</a></h4>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <div class="panel-group" role="tablist">
+                                                        <div class="panel panel-default">
+                                                            <div class="panel-heading" role="tab" id="listSubA5">
+                                                                <h4 class="panel-title">
+                                                                    <a href="#listA5" class="collapsed" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="listA5">
+                                                                        機電運輸技術
+                                                                    </a>
+                                                                </h4>
+                                                            </div>
+                                                            <div class="collapse panel-collapse" role="tabpanel" id="listA5" aria-labelledby="listSubA5">
+                                                                <ul class="list-group">
+                                                                    <li class="list-group-item"><a href="b2-1-2-searchResault.html" title="" class="">無人載具條例</a></li>
+                                                                    <li class="list-group-item"><a href="b2-1-2-searchResault.html" title="" class="">智慧製造</a></li>
+                                                                    <li class="list-group-item"><a href="b2-1-2-searchResault.html" title="" class="">智慧移動</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <h4 class="panel-linktitle"><a href="b2-1-2-searchResault.html" title="" class="">生醫材化技術</a></h4>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <h4 class="panel-linktitle"><a href="b2-1-2-searchResault.html" title="" class="">前瞻創新服務</a></h4>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="panel panel-default panel-doubleCollapse">
+                                        <div class="panel-heading" role="tab" id="headingXsTwo">
+                                            <h4 class="panel-title">
+                                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseXsTwo" aria-expanded="false" aria-controls="collapseXsTwo">
+                                                    臨時增列題庫
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseXsTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingXsTwo">
+                                            <ul class="list-group">
+                                                <li class="list-group-item">
+                                                    <h4 class="panel-linktitle"><a href="b2-1-2-searchResault.html" title="" class="">承接科專財團法人議題</a></h4>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="panel panel-default panel-doubleCollapse">
+                                        <div class="panel-heading" role="tab" id="headingXsThree">
+                                            <h4 class="panel-title">
+                                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseXsThree" aria-expanded="false" aria-controls="collapseXsThree">
+                                                    立法院模擬題庫
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseXsThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingXsThree">
+                                            <ul class="list-group">
+                                                <li class="list-group-item">
+                                                    <h4 class="panel-linktitle"><a href="b2-1-2-searchResault.html" title="" class="">年度科專預算編列說明及執行情形</a></h4>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <h4 class="panel-linktitle"><a href="b2-1-2-searchResault.html" title="" class="">科專政策</a></h4>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <div class="panel-group" role="tablist">
+                                                        <div class="panel panel-default">
+                                                            <div class="panel-heading" role="tab" id="listSubC3">
+                                                                <h4 class="panel-title">
+                                                                    <a href="#listC3" class="collapsed" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="listC3">
+                                                                        科專績效
+                                                                    </a>
+                                                                </h4>
+                                                            </div>
+                                                            <div class="collapse panel-collapse" role="tabpanel" id="listC3" aria-labelledby="listSubC3">
+                                                                <ul class="list-group">
+                                                                    <li class="list-group-item">
+                                                                        <a href="b2-1-2-searchResault.html" title="" class="">4-3-001 105年度科技專案執行成果之運用說明</a>
+                                                                    </li>
+                                                                    <li class="list-group-item">
+                                                                        <a href="b2-1-2-searchResault.html" title="" class="">4-3-002  科技專案執行機構之績效指標規劃及績效考評作法說明</a>
+                                                                    </li>
+                                                                    <li class="list-group-item">
+                                                                        <a href="b2-1-2-searchResault.html" title="" class="">4-3-003  財團法人之年度政府補助及民間收入比例議題</a>
+                                                                    </li>
+                                                                    <li class="list-group-item">
+                                                                        <a href="b2-1-2-searchResault.html" title="" class="">4-3-004  工研院預算及科專執行績效</a>
+                                                                    </li>
+                                                                    <li class="list-group-item">
+                                                                        <a href="b2-1-2-searchResault.html" title="" class="">4-3-005  因應我國產業技術貿易逆差強化產業技術研發布局</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <h4 class="panel-linktitle"><a href="" title="" class="">承接科專財團法人議題</a></h4>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <h4 class="panel-linktitle"><a href="" title="" class="">科專之法規、制度、管理、管制面</a></h4>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <h4 class="panel-linktitle"><a href="b2-1-2-searchResault.html" title="" class="">電資通光</a></h4>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <h4 class="panel-linktitle"><a href="b2-1-2-searchResault.html" title="" class="">機電運輸</a></h4>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <h4 class="panel-linktitle"><a href="b2-1-2-searchResault.html" title="" class="">生技製藥</a></h4>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <h4 class="panel-linktitle"><a href=""b2-1-2-searchResault.html title="" class="">傳統產業、中小企業及服務業</a></h4>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <h4 class="panel-linktitle"><a href="b2-1-2-searchResault.html" title="" class="">學界業科專</a></h4>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <h4 class="panel-linktitle"><a href="b2-1-2-searchResault.html" title="" class="">五加二創新產業</a></h4>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <h4 class="panel-linktitle"><a href="b2-1-2-searchResault.html" title="" class="">地方關切及原住民議題</a></h4>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <h4 class="panel-linktitle"><a href="b2-1-2-searchResault.html" title="" class="">其他</a></h4>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="panel panel-default panel-doubleCollapse">
+                                        <div class="panel-heading" role="tab" id="headingXsFour">
+                                            <h4 class="panel-title">
+                                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseXsFour" aria-expanded="true" aria-controls="collapseXsFour">
+                                                    部次長承諾事項
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseXsFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingXsFour">
+                                            <ul class="list-group">
+                                                <li class="list-group-item">
+                                                    <h4 class="panel-linktitle"><a href="b2-1-2-searchResault.html" title="" class="">相關議題</a></h4>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="panel panel-default panel-doubleCollapse">
+                                        <div class="panel-heading" role="tab" id="headingXsFive">
+                                            <h4 class="panel-title">
+                                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseXsFive" aria-expanded="false" aria-controls="collapseXsFive">
+                                                    委員會臨時提案
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseXsFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingXsFive">
+                                            <ul class="list-group">
+                                                <li class="list-group-item">
+                                                    <h4 class="panel-linktitle"><a href="b2-1-2-searchResault.html" title="" class="">油電相關提案</a></h4>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="panel panel-default panel-doubleCollapse">
+                                        <div class="panel-heading" role="tab" id="headingXsSix">
+                                            <h4 class="panel-title">
+                                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseXsSix" aria-expanded="false" aria-controls="collapseXsSix">
+                                                    立法委員請託事項
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseXsSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingXsSix">
+                                            <ul class="list-group">
+                                                <li class="list-group-item">
+                                                    <h4 class="panel-linktitle"><a href="b2-1-2-searchResault.html" title="" class="">光電議題</a></h4>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <h4 class="panel-linktitle"><a href="b2-1-2-searchResault.html" title="" class="">5G議題</a></h4>
+                                                </li>
+                                                <!-- <li class="list-group-item">
+                                                    <h4 class="panel-linktitle"><a href="" title="" class=""></a></h4>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <h4 class="panel-linktitle"><a href="" title="" class=""></a></h4>
+                                                </li> -->
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- / 手機尺寸才出現的 內層包包 -->
+                        </div>
+                        <!-- / row 議題瀏覽區 -->
+                    </div>
+                    <!-- / tabpanel -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="navbar">
+        <div class="container container-CSD">
+            <h4>法人科專資訊整合平台</h4>
+            <a href="">聯絡我們</a> ｜ <a href="">技術支援</a> ｜ <a href="">隱私權</a>
+            <a title="回頂端按鈕" onclick="topFunction()" id="goTop" href="#" class="abgne_gotoheader">
+                <div class="glyphicon glyphicon-triangle-top"></div>Top</a>
+            <a id="openBtnSmallLeft" class="closebtn hidden-xs" href="javascript:void(0)" onclick="openNav()"><span class="glyphicon glyphicon-arrow-right"></span>打開側邊欄</a>
+        </div>
+    </footer>
+    <!-- 搜尋框標籤效果 -->
+    <script src="js/chosen.jquery.min.js" type="text/javascript"></script>
+    <script>
+    //一載入頁面就判定：是否打開側邊欄
+    window.onload = sideMenuOpen();
+
+    function sideMenuOpen() {
+        var w = window.outerWidth;
+        if (document.body.width > 767 || w > 767) {
+            document.getElementById("mySidenav").style.display = "block";
+            document.getElementById("mySidenavRight").className = "col-sm-9";
+        } else {
+            document.getElementById("mySidenav").style.display = "none";
+            document.getElementById("mySidenavRight").className = "col-xs-12";
+        }
+    }
+    //打開側邊欄
+    function openNav() {
+        var w = window.outerWidth;
+        if (document.body.width > 767 || w > 767) {
+            document.getElementById("mySidenav").style.display = "block";
+            document.getElementById("mySidenavRight").className = "col-sm-9";
+            document.getElementById("openBtnSmallLeft").style.display = "none";
+        } else {
+            document.getElementById("mySidenav").style.display = "block";
+            document.getElementById("mySidenavRight").className = "col-xs-12";
+            document.getElementById("openBtnSmallLeft").style.display = "none";
+        }
+    }
+
+    function closeNav() {
+        var w = window.outerWidth;
+        // document.getElementById("mySidenav").style.display = "none";
+        if (document.body.width > 767 || w > 767) {
+            document.getElementById("mySidenav").style.display = "none";
+            document.getElementById("mySidenavRight").className = "col-xs-12";
+            document.getElementById("openBtnSmallLeft").style.display = "block";
+        } else {
+            document.getElementById("mySidenav").style.display = "none";
+            document.getElementById("mySidenavRight").className = "col-xs-12";
+            document.getElementById("openBtnSmallLeft").style.display = "block";
+        }
+    }
+
+    function closeArea() {
+        let Target = document.getElementById("issueArea")
+        if (Target.style.display != "none") {
+            Target.style.display = "none"
+        } else {
+            Target.style.display = "block"
+        }
+    }
+    </script>
+</body>
+
+</html>
