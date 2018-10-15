@@ -823,13 +823,13 @@ img.politicalParty-card{
 
 
 @media screen and (min-width: 768px) {
-    .container {
-     width: 100%; 
-}
     .container-CSD .navbar-nav>li>a{
         padding-top: 15px;
         padding-bottom: 15px;
     }
+    .container-main {
+     width: 100%; 
+ }
 
     .container-CSD .nav>li>a:hover, .container-CSD .nav>li>a:focus{
         box-sizing: border-box;
@@ -861,12 +861,12 @@ img.politicalParty-card{
     }
 }
 @media (min-width: 992px){
-    .container {
+    .container-main {
     width: 970px;
 }
 }
 @media (min-width: 1200px){
-    .container {
+    .container-main {
     width: 1170px;
 }
 }
