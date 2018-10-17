@@ -9,7 +9,7 @@
 body{
     background: url(../img/bg-body.png)!important;
 }
-.form-group select {height: 31px;}
+.form-group select {height: 30x;}
 /*[設定]整體----------*/
 
 
@@ -128,6 +128,12 @@ nav {
 .mobileSearchTab .panel-collapse .panel-body a:hover, .mobileSearchTab .panel-collapse .panel-body a:focus, .mobileSearchTab .panel-collapse .panel-body a:active{
     background: #fff;
 }
+/*.myselect>option{
+    height: 30px;
+    line-height: 30px;
+    vertical-align: middle;
+    padding: 5px 8px;
+}*/
 @keyframes CC {
     0% {
         left: 0px;
@@ -182,7 +188,16 @@ nav {
 
 
 /*tabs tab-side tab-sideContent*/
-
+.breadcrumb{
+    background-color: transparent;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.nav>li>a.btn:hover, .nav>li>a.btn:focus{
+    color: #fff;
+    background-color: #286090;
+    border-color: #204d74;
+}
 .tab-side {}
 
 .tab-side>li {
@@ -230,7 +245,6 @@ nav {
 }
 
 .tab-sideContentSec {
-    padding-top: 30px;
 }
 .searchArea2{
     margin-bottom: 20px;
@@ -524,11 +538,22 @@ img.politicalParty-card{
 .text-alert
 /*狀態類文字*/
 
+.bg-collapse >div:nth-of-type(even){
+    padding-right: 0;
+    padding-left: 30px;
+}
+.bg-collapse >div:nth-of-type(odd){
+    padding-left: 0;
+    padding-right: 30px;
+}
 .h6 {
     font-size: 13px !important;
     margin: 0;
 }
-
+.bg-collapse{
+    background: #F9F8F4;
+    padding: 15px;
+}
 .bg-header {
     background: rgba(0, 0, 0, 0.02);
 }
