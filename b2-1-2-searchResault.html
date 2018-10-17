@@ -11,7 +11,6 @@
     <meta name="keywords" content="法人科專資訊整合平台,CSD,資訊整合平台,法人科專" />
     <meta name="description" content="法人科專資訊整合平台" />
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <!--     <link rel="stylesheet" href="css/docs.theme.min.css"> -->
     <link rel="stylesheet" href="css/style.css">
     <!--[if lt IE 9]>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -108,46 +107,18 @@
         </div>
     </nav>
     <!--nav結束-->
-    <section class="sectionMain">
+    <section class="container">
         <div class="row m-0">
-            <div id="mySidenav" class="col-xs-12 col-sm-3 sidenav">
-                <ul class="media-list mediaInfo-left">
-                    <li class="media">
-                        <div class="media-left">
-                            <a href="">
-                                <img class="media-object img-round" src="img/ic-head.png" alt="個人照片" height="48px" width="48px">
-                            </a>
-                        </div>
-                        <div class="media-body">
-                            <p class="media-heading m-0 h6">DOIT</p>
-                        </div>
-                        <div class="media-right">
-                            <div class="inline-block">
-                                <a class="inline-block closebtn-smallLeft" href="javascript:void(0)" onclick="closeNav()">
-                                    <span class="glyphicon glyphicon-arrow-left"></span>
-                                </a>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-                <!-- <h2 class="h2 mb-20">關注議題&nbsp;ISSUE</h2> -->
-                <ul class="nav nav-tabs tab-side">
-                    <!-- <li>
-                        <a href="b1-1-top.html" class="h3" aria-controls="焦點議題">焦點議題</a>
-                    </li> -->
-                    <li class="active">
-                        <a href="b2-1-search.html" class="h3" aria-controls="議題查詢">議題查詢</a>
-                    </li>
-                    <li>
-                        <a href="b4-1-analysis.html" class="h3" aria-controls="議題分析">議題分析</a>
-                    </li>
-                    <li>
-                        <a href="b5-1-legislator.html" class="h3" aria-controls="立委專區">立委專區</a>
-                    </li>
-                </ul>
-            </div>
-            <div id="mySidenavRight" class="col-xs-12 col-sm-9">
-                <ul class="nav nav-tabs pt-10" role="tablist">
+            <ol class="breadcrumb">
+                <li><a href="index.html">首頁</a></li>
+                <li><a href="b2-1-search.html">議題查詢</a></li>
+                <li><a href="b2-1-1-search.html">檢索結果</a></li>
+                <li class="active">政府補助與民間收入議題</li>
+            </ol>
+            <!-- / 麵包屑 -->
+            
+       
+                <ul class="nav nav-tabs mb-20" role="tablist">
                     <li role="presentation" class="active"><a href="#resA" aria-controls="議題查詢Search" role="tab" data-toggle="tab" class="h3">105</a></li>
                     <li role="presentation"><a href="#resB" aria-controls="議題查詢Search" role="tab" data-toggle="tab" class="h3">106</a></li>
                 </ul>
@@ -155,7 +126,7 @@
                 <div class="tab-content tab-sideContentSec">
                     <div role="tabpanel" class="tab-pane active" id="resA">
                         <div class="row">
-                            <div class="col-xs-12">
+                            <div class="col-xs-12 mb-10">
                                 <a href="b2-1-search.html" role="button" class="btn btn-info btn-sm"><span class="glyphicon glyphicon-arrow-left"></span>回上頁</a>
                                 <a href="b2-1-search.html" role="button" class="btn btn-info btn-sm"><span class="glyphicon glyphicon-search"></span>重新查詢</a>
                             </div>
@@ -285,61 +256,7 @@
                                 </div>
                                 <!-- / 第一項 相關議題 -->
                                 <br>
-                                <!-- <h4 class="h4 mb-20">相關計畫</h4>
-                                <div class="col-xs-12 p-0">
-                                    <table class="rwd-table table-searchbooks">
-                                        <tr>
-                                            <th>年度<a href="" class="glyphicon glyphicon-chevron-down"></a></th>
-                                            <th>計畫名稱</th>
-                                        </tr>
-                                        <tr>
-                                            <td aria-label="年度" data-th="年度">105</td>
-                                            <td aria-label="計畫名稱" data-th="計畫名稱"><a href="b2-1-2-searchResault.html">人工智慧產業科專計畫成效</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td aria-label="年度" data-th="年度">106</td>
-                                            <td aria-label="計畫名稱" data-th="計畫名稱"><a href="b2-1-2-searchResault.html">政府補助與民間收入議題</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td aria-label="年度" data-th="年度">107</td>
-                                            <td aria-label="計畫名稱" data-th="計畫名稱"><a href="b2-1-2-searchResault.html">自動車促投市場分析</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td aria-label="年度" data-th="年度">100</td>
-                                            <td aria-label="計畫名稱" data-th="計畫名稱"><a href="b2-1-2-searchResault.html">政府補助與民間收入議題</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td aria-label="年度" data-th="年度">101</td>
-                                            <td aria-label="計畫名稱" data-th="計畫名稱"><a href="b2-1-2-searchResault.html">科專計畫績效指標</a></td>
-                                        </tr>
-                                    </table>
-                                </div>
-                                <div class="col-xs-12 p-0">
-                                    <ul class="pagination pagination-sm pull-right">
-                                        <li class="page-item disabled">
-                                            <a class="page-link" href="#">&laquo;</a>
-                                        </li>
-                                        <li class="page-item active">
-                                            <a class="page-link" href="#">1</a>
-                                        </li>
-                                        <li class="page-item">
-                                            <a class="page-link" href="#">2</a>
-                                        </li>
-                                        <li class="page-item">
-                                            <a class="page-link" href="#">3</a>
-                                        </li>
-                                        <li class="page-item">
-                                            <a class="page-link" href="#">4</a>
-                                        </li>
-                                        <li class="page-item">
-                                            <a class="page-link" href="#">5</a>
-                                        </li>
-                                        <li class="page-item">
-                                            <a class="page-link" href="#">&raquo;</a>
-                                        </li>
-                                    </ul>
-                                </div> -->
-                                <!-- / 第二項 相關計畫 -->
+                                
                             </div>
                             <!-- / 底下區塊 -->
                         </div>
@@ -478,61 +395,6 @@
                                     </ul>
                                 </div>
                                 <!-- / 第一項 相關議題 -->
-                                <!-- <h4 class="h4 mb-20">相關計畫</h4>
-                                <div class="col-xs-12 p-0">
-                                    <table class="rwd-table table-searchbooks">
-                                        <tr>
-                                            <th>年度<a href="" class="glyphicon glyphicon-chevron-down"></a></th>
-                                            <th>計畫名稱</th>
-                                        </tr>
-                                        <tr>
-                                            <td aria-label="年度" data-th="年度">105</td>
-                                            <td aria-label="計畫名稱" data-th="計畫名稱"><a href="b2-1-2-searchResault.html">人工智慧產業科專計畫成效</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td aria-label="年度" data-th="年度">106</td>
-                                            <td aria-label="計畫名稱" data-th="計畫名稱"><a href="b2-1-2-searchResault.html">政府補助與民間收入議題</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td aria-label="年度" data-th="年度">107</td>
-                                            <td aria-label="計畫名稱" data-th="計畫名稱"><a href="b2-1-2-searchResault.html">自動車促投市場分析</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td aria-label="年度" data-th="年度">100</td>
-                                            <td aria-label="計畫名稱" data-th="計畫名稱"><a href="b2-1-2-searchResault.html">政府補助與民間收入議題</a></td>
-                                        </tr>
-                                        <tr>
-                                            <td aria-label="年度" data-th="年度">101</td>
-                                            <td aria-label="計畫名稱" data-th="計畫名稱"><a href="b2-1-2-searchResault.html">科專計畫績效指標</a></td>
-                                        </tr>
-                                    </table>
-                                </div>
-                                <div class="col-xs-12 p-0">
-                                    <ul class="pagination pagination-sm pull-right">
-                                        <li class="page-item disabled">
-                                            <a class="page-link" href="#">&laquo;</a>
-                                        </li>
-                                        <li class="page-item active">
-                                            <a class="page-link" href="#">1</a>
-                                        </li>
-                                        <li class="page-item">
-                                            <a class="page-link" href="#">2</a>
-                                        </li>
-                                        <li class="page-item">
-                                            <a class="page-link" href="#">3</a>
-                                        </li>
-                                        <li class="page-item">
-                                            <a class="page-link" href="#">4</a>
-                                        </li>
-                                        <li class="page-item">
-                                            <a class="page-link" href="#">5</a>
-                                        </li>
-                                        <li class="page-item">
-                                            <a class="page-link" href="#">&raquo;</a>
-                                        </li>
-                                    </ul>
-                                </div> -->
-                                <!-- / 第二項 相關計畫 -->
                             </div>
                             <!-- / 底下區塊 -->
                         </div>
@@ -549,53 +411,7 @@
             <a href="">聯絡我們</a> ｜ <a href="">技術支援</a> ｜ <a href="">隱私權</a>
             <a title="回頂端按鈕" onclick="topFunction()" id="goTop" href="#" class="abgne_gotoheader">
                 <div class="glyphicon glyphicon-triangle-top"></div>Top</a>
-            <a id="openBtnSmallLeft" class="closebtn hidden-xs" href="javascript:void(0)" onclick="openNav()"><span class="glyphicon glyphicon-arrow-right"></span>打開側邊欄</a>
-        </div>
     </footer>
-    <script>
-    //一載入頁面就判定：是否打開側邊欄
-    window.onload = sideMenuOpen();
-
-    function sideMenuOpen() {
-        var w = window.outerWidth;
-        if (document.body.width > 767 || w > 767) {
-            document.getElementById("mySidenav").style.display = "block";
-            document.getElementById("mySidenavRight").className = "col-sm-9";
-        } else {
-            document.getElementById("mySidenav").style.display = "none";
-            document.getElementById("mySidenavRight").className = "col-xs-12";
-        }
-
-    }
-    //打開側邊欄
-    function openNav() {
-        var w = window.outerWidth;
-        if (document.body.width > 767 || w > 767) {
-            document.getElementById("mySidenav").style.display = "block";
-            document.getElementById("mySidenavRight").className = "col-sm-9";
-            document.getElementById("openBtnSmallLeft").style.display = "none";
-        } else {
-            document.getElementById("mySidenav").style.display = "block";
-            document.getElementById("mySidenavRight").className = "col-xs-12";
-            document.getElementById("openBtnSmallLeft").style.display = "none";
-        }
-    }
-
-    function closeNav() {
-        var w = window.outerWidth;
-        // document.getElementById("mySidenav").style.display = "none";
-        if (document.body.width > 767 || w > 767) {
-            document.getElementById("mySidenav").style.display = "none";
-            document.getElementById("mySidenavRight").className = "col-xs-12";
-            document.getElementById("openBtnSmallLeft").style.display = "block";
-        } else {
-            document.getElementById("mySidenav").style.display = "none";
-            document.getElementById("mySidenavRight").className = "col-xs-12";
-            document.getElementById("openBtnSmallLeft").style.display = "block";
-        }
-
-    }
-    </script>
 </body>
 
 </html>
