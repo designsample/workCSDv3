@@ -260,10 +260,11 @@ nav {
     padding: 40px 15px;
     margin-bottom: 15px;
 }
-.tabSearchArea2>.nav-tabs {
+.tabSearchArea2>.nav-tabs,.tabSearchSub>.nav-tabs {
     border-bottom: 1px solid #8a6d3b;
 }
-.tabSearchArea2>.nav-tabs>li.active>a, .tabSearchArea2>.nav-tabs>li.active>a:hover, .tabSearchArea2>.nav-tabs>li.active>a:focus{
+.tabSearchArea2>.nav-tabs>li.active>a, .tabSearchArea2>.nav-tabs>li.active>a:hover, .tabSearchArea2>.nav-tabs>li.active>a:focus,
+.tabSearchSub>.nav-tabs>li.active>a, .tabSearchSub>.nav-tabs>li.active>a:hover, .tabSearchSub>.nav-tabs>li.active>a:focus{
     color: #98253E;
     background-color: #fff0;
     border: 1px solid #8a6d3b;
@@ -271,6 +272,7 @@ nav {
     cursor: default;
     text-shadow: 1px 1px 14px #fff;
 }
+
 
 .tabSearchArea {
     width: 100%;
@@ -302,7 +304,7 @@ nav {
     line-height: 2em;
     height: 62px;
 }
-.searchArea-group .input-group .input-group-btn a:first-child{
+.searchArea-group .input-group .input-group-btn a.date:first-child{
     border: 1px solid #ccc;
     background: #fff;
 
@@ -926,6 +928,9 @@ img.politicalParty-card{
 }
 .bg-collapse >div.seachBtn{
     padding: 0;
+}
+.modal-lg {
+    width: 1100px;
 }
 }
 
