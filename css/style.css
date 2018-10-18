@@ -843,6 +843,17 @@ img.politicalParty-card{
     .tabSearchArea {
     margin-top: 15px;
 }
+.bg-collapse >div:nth-of-type(even){
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.bg-collapse >div:nth-of-type(odd){
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.bg-collapse >div.col-xs-12{
+    padding: 0 15px;
+}
 }
 
 
@@ -884,6 +895,17 @@ img.politicalParty-card{
     .container-CSD {
         background: #F9F8F4;
     }
+    .bg-collapse >div:nth-of-type(even){
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.bg-collapse >div:nth-of-type(odd){
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.bg-collapse >div.col-xs-12{
+    padding: 0 15px;
+}
 }
 @media (min-width: 992px){
     .container-main {
@@ -893,6 +915,17 @@ img.politicalParty-card{
 @media (min-width: 1200px){
     .container-main {
     width: 1170px;
+}
+.bg-collapse >div.col-lg-6:nth-of-type(even){
+    padding-right: 0;
+    padding-left: 30px;
+}
+.bg-collapse >div.col-lg-6:nth-of-type(odd){
+    padding-left: 0;
+    padding-right: 30px;
+}
+.bg-collapse >div.seachBtn{
+    padding: 0;
 }
 }
 
