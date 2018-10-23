@@ -309,6 +309,19 @@ nav {
     background: #fff;
 
 }
+.searchArea-group .input-group .input-group-btn a:nth-child(2){
+    border-bottom-right-radius: 4px!important;
+    border-top-right-radius: 4px!important;
+    
+}
+.searchArea-group .input-group .input-group-btn a.question{
+    border-radius: 50%;
+    padding: 5px;
+    height: 30px;
+    line-height: 20px;
+    width: 30px;
+    font-size: 20px;
+}
 .list-group-nonestyle{
     margin-bottom: 0;
     list-style: none;
@@ -440,7 +453,9 @@ img.politicalParty-card{
 .issueCard>.card-header a{
 }
 .issueCard>.card-body{
-    min-height: 12em;
+    /*min-height: 12em;*/
+    height: 13em;
+    overflow: hidden;
 }
 .issueCard .list-group .list-group-item{
     
