@@ -43,13 +43,23 @@
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-briefcase"></span>關注議題<b class="caret"></b></a>
                         <ul class="dropdown-menu">
-                            <!-- <li><a href="b1-1-top.html">焦點議題 Top</a></li> -->
                             <li><a href="b2-1-search.html">議題查詢</a></li>
-                            <li><a href="b4-1-analysis.html">議題分析</a></li>
                             <li><a href="b5-1-legislator.html">立委專區</a></li>
+                            <li><a href="b4-1-analysis.html">議題分析</a></li>
                         </ul>
                     </li>
+                    
+                    <!-- <li><a href=""><span class="glyphicon glyphicon-dashboard"></span>DASHBOARD</a></li>
                     <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-question-sign"></span>使用手冊<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="">操作手冊</a></li>
+                        </ul>
+                    </li> -->
+                    <li>
+                        <a href=""><span class="glyphicon glyphicon-question-sign"></span>操作手冊</a>
+                    </li>
+                    <!-- <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-flash"></span>研發成果<b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li><a href="">焦點成果</a></li>
@@ -59,13 +69,6 @@
                             <li><a href="">廠商專區</a></li>
                         </ul>
                     </li>
-                    <!-- <li><a href=""><span class="glyphicon glyphicon-dashboard"></span>DASHBOARD</a></li> -->
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-question-sign"></span>平台介紹<b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="">操作手冊</a></li>
-                        </ul>
-                    </li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-cog"></span>後台管理<b class="caret"></b></a>
                         <ul class="dropdown-menu">
@@ -73,7 +76,7 @@
                             <li><a href="http://59.120.40.187/html/tdp/manage/p2.html">系統管理</a></li>
                             <li><a href="index.html">登出</a></li>
                         </ul>
-                    </li>
+                    </li> -->
                     <li>
                         <div class="btn-group btn-group-toggle font-sizeGroup" data-toggle="buttons">
                             <label class="btn btn-info btn-sm">
@@ -100,7 +103,7 @@
             <!-- 手機隱藏選單區結束 -->
             <script type="text/javascript">
             var $ofweidht = innerWidth; //取得螢幕寬度
-            if ($ofweidht <= 768) { //設定判斷條件，大於等於1280時frametop的CSS屬性為block
+            if ($ofweidht <= 768) { //設定判斷條件，大於等於1280時
                 document.getElementById("logoImg").src = 'img/logo-small.png';
             } else {
                 document.getElementById("logoImg").src = 'img/logo.png';
@@ -116,8 +119,8 @@
                     <div class="tabSearchArea2">
                         <ul class="nav nav-tabs col-lg-6 col-lg-offset-3 mb-20 hidden-xs" role="tablist">
                             <li role="presentation" class=""><a href="b2-1-search.html" aria-controls="議題查詢" role="tab" data-toggle="link" class="h3">議題查詢</a></li>
-                            <li role="presentation" class="active"><a href="#search" aria-controls="立委專區" role="tab" data-toggle="tab" class="h3">立委專區</a></li>
                             <li role="presentation" class=""><a href="b4-1-analysis.html" aria-controls="議題分析" role="tab" data-toggle="link" class="h3">議題分析</a></li>
+                            <li role="presentation" class="active"><a href="#search" aria-controls="立委專區" role="tab" data-toggle="tab" class="h3">立委專區</a></li>
                         </ul>
                         <!-- / Tab panels -->
                         <div class="panel-group visible-xs mobileSearchTab" id="accordion" role="tablist" aria-multiselectable="true">
