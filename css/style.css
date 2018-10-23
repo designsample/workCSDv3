@@ -341,7 +341,27 @@ nav {
     width: auto;
 }
 /*img圖片照片樣式*/
-
+.ic-btn-outter a.btn{
+    text-align: left!important;
+}
+.ic{
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    vertical-align: middle;
+}
+.ic-word{
+    background: url(../img/ic_w.png);
+    background-size: contain;
+}
+.ic-excel{
+    background: url(../img/ic_exl.png);
+    background-size: contain;
+}
+.ic-ppt{
+    background: url(../img/ic_ppt.png);
+    background-size: contain;
+}
 .img-round {
     border-radius: 50%;
     border: 2px solid #fff;
@@ -458,8 +478,21 @@ img.politicalParty-card{
     overflow: hidden;
 }
 .issueCard .list-group .list-group-item{
-    
+    padding-left: calc(15px + 1em);
 }/*第一層級*/
+.issueCard .list-group .list-group-item::before{
+    position: absolute;
+    left: 0.8em;
+}
+.issueCard .list-group .list-group-item:nth-child(1)::before{
+    content: '1.'; 
+}
+.issueCard .list-group .list-group-item:nth-child(2)::before{
+    content: '2.';
+}
+.issueCard .list-group .list-group-item:nth-child(3)::before{
+    content: '3.';
+}
 .issueCard .list-group .list-group .list-group-item {
     /*background: #ecf0f1;*/
     /*background: #f9f9f9;*/
