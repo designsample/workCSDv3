@@ -133,7 +133,7 @@
             <div class="col-xs-12 collapse bg-collapse" id="searchSort">
                 <div class="col-xs-12 col-lg-6">
                     <div class="form-group col-xs-12 p-0">
-                        <label class="control-label col-xs-4 col-md-2 col-lg-3 p-0">議題年度</label>
+                        <label class="control-label col-xs-4 col-md-2 col-lg-3 p-0">議題年份</label>
                         <div class="form-inline inline-block col-xs-8 col-md-10 col-lg-9 p-0">
                             <select title="yearA" class="from-control col-xs-12 col-md-5">
                                 <option value="96">96</option>
@@ -177,7 +177,7 @@
                 </div>
                 <div class="col-xs-12 col-lg-6">
                     <div class="form-group col-xs-12 p-0">
-                        <label for="issue" class="control-label col-xs-4 col-md-2 col-lg-3 p-0">議題</label>
+                        <label for="issue" class="control-label col-xs-4 col-md-2 col-lg-3 p-0">議題說明</label>
                         <div class="form-inline inline-block col-xs-8 col-md-10 col-lg-9 p-0">
                             <input type="text" id="issue" name="" class="from-control col-xs-12 p-0">
                         </div>
@@ -185,9 +185,27 @@
                 </div>
                 <div class="col-xs-12 col-lg-6">
                     <div class="form-group col-xs-12 p-0">
-                        <label for="reply" class="control-label col-xs-4 col-md-2 col-lg-3 p-0">回覆</label>
+                        <label for="reply" class="control-label col-xs-4 col-md-2 col-lg-3 p-0">回覆內容</label>
                         <div class="form-inline inline-block col-xs-8 col-md-10 col-lg-9 p-0">
                             <input type="text" id="reply" name="" class="from-control col-xs-12 p-0">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-lg-6">
+                    <div class="form-group col-xs-12 p-0">
+                        <label for="issueType" class="control-label col-xs-4 col-md-2 col-lg-3 p-0">議題類別</label>
+                        <div class="form-inline inline-block col-xs-8 col-md-10 col-lg-9 p-0">
+                            <select id="issueType" title="issueType" class="from-control col-xs-12 p-0">
+                                <option value="全選" selected="selected">全選</option>
+                                <option value="國會輿情">國會輿情</option>
+                                <option value="臨時增列題庫">臨時增列題庫</option>
+                                <option value="立法院模擬題庫">立法院模擬題庫</option>
+                                <option value="部次長承諾事項">部次長承諾事項</option>
+                                <option value="委員會臨時提案">委員會臨時提案</option>
+                                <option value="立法委員請託事項">立法委員請託事項</option>
+                                <option value="立法委員洽索資料">立法委員洽索資料</option>
+                                <option value="預算相關議題">預算相關議題</option>
+                            </select>
                         </div>
                     </div>
                 </div>
@@ -204,6 +222,24 @@
                                 <option value="立法院預算中心">立法院預算中心</option>
                                 <option value="其他">其他</option>
                                 <option value="無">無</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-lg-6">
+                    <div class="form-group col-xs-12 p-0">
+                        <label for="ImplementedBy" class="control-label col-xs-4 col-md-2 col-lg-3 p-0">承辦科別</label>
+                        <div class="form-inline inline-block col-xs-8 col-md-10 col-lg-9 p-0">
+                            <select id="ImplementedBy" title="ImplementedBy" class="from-control col-xs-12 p-0">
+                                <option value="全選" selected="selected">全選</option>
+                                <option value="科部甲">科部甲</option>
+                                <option value="科部乙">科部乙</option>
+                                <option value="科部丙">科部丙</option>
+                                <option value="科部丁">科部丁</option>
+                                <option value="科部戊">科部戊</option>
+                                <option value="科部己">科部己</option>
+                                <option value="科部庚">科部庚</option>
+                                <option value="科部辛">科部辛</option>
                             </select>
                         </div>
                     </div>
@@ -344,43 +380,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-12 col-lg-6">
-                    <div class="form-group col-xs-12 p-0">
-                        <label for="issueType" class="control-label col-xs-4 col-md-2 col-lg-3 p-0">議題類別</label>
-                        <div class="form-inline inline-block col-xs-8 col-md-10 col-lg-9 p-0">
-                            <select id="issueType" title="issueType" class="from-control col-xs-12 p-0">
-                                <option value="全選" selected="selected">全選</option>
-                                <option value="國會輿情">國會輿情</option>
-                                <option value="臨時增列題庫">臨時增列題庫</option>
-                                <option value="立法院模擬題庫">立法院模擬題庫</option>
-                                <option value="部次長承諾事項">部次長承諾事項</option>
-                                <option value="委員會臨時提案">委員會臨時提案</option>
-                                <option value="立法委員請託事項">立法委員請託事項</option>
-                                <option value="立法委員洽索資料">立法委員洽索資料</option>
-                                <option value="預算相關議題">預算相關議題</option>
-                            </select>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-lg-6">
-                    <div class="form-group col-xs-12 p-0">
-                        <label for="ImplementedBy" class="control-label col-xs-4 col-md-2 col-lg-3 p-0">承辦科別</label>
-                        <div class="form-inline inline-block col-xs-8 col-md-10 col-lg-9 p-0">
-                            <select id="ImplementedBy" title="ImplementedBy" class="from-control col-xs-12 p-0">
-                                <option value="全選" selected="selected">全選</option>
-                                <option value="科部甲">科部甲</option>
-                                <option value="科部乙">科部乙</option>
-                                <option value="科部丙">科部丙</option>
-                                <option value="科部丁">科部丁</option>
-                                <option value="科部戊">科部戊</option>
-                                <option value="科部己">科部己</option>
-                                <option value="科部庚">科部庚</option>
-                                <option value="科部辛">科部辛</option>
-                            </select>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-lg-6">
+                <!-- <div class="col-xs-12 col-lg-6">
                     <div class="form-group col-xs-12 p-0">
                         <label for="ImplementedByWho" class="control-label col-xs-4 col-md-2 col-lg-3 p-0">承辦人員</label>
                         <div class="form-inline inline-block col-xs-8 col-md-10 col-lg-9 p-0">
@@ -405,7 +405,7 @@
                             <input type="text" id="keyWords" name="" class="from-control col-xs-12 p-0">
                         </div>
                     </div>
-                </div>
+                </div> -->
                 <div class="col-xs-12 seachBtn">
                     <a href="b2-1-1-search.html" class="btn btn-info pull-right" role="button">查詢</a>
                 </div>
@@ -439,9 +439,8 @@
                         <p class="inline-block m-0">每頁顯示：</p>
                         <select id="itemperPage" title="itemperPage" class="from-control">
                             <option value="10" selected="selected">10</option>
+                            <option value="20">20</option>
                             <option value="30">30</option>
-                            <option value="50">50</option>
-                            <option value="100">100</option>
                         </select>
                         <p class="inline-block m-0">筆</p>
                     </div>
@@ -459,60 +458,60 @@
                         <th>提案人<a href="" class="glyphicon glyphicon-chevron-down"></a></th>
                     </tr>
                     <tr>
-                        <td aria-label="年份" data-th="年份">106</td>
+                        <td aria-label="年份" data-th="年份">106-10-17</td>
                         <td aria-label="議題說明" data-th="議題說明"><a href="b2-1-2-searchResault.html">政府補助與民間收入議題</a></td>
                         <td aria-label="議題類別" data-th="議題類別">立法院模擬題庫</td>
                         <td aria-label="提案單位" data-th="提案單位">委員提案</td>
-                        <td aria-label="提案人" data-th="提案人"><a href="b5-2-legislator.html">趙小花</a></td>
+                        <td aria-label="提案人" data-th="提案人"><a href="b5-2-legislator.html">王惠美</a></td>
                     </tr>
                     <tr>
-                        <td aria-label="年份" data-th="年份">105</td>
+                        <td aria-label="年份" data-th="年份">105-10-05</td>
                         <td aria-label="議題說明" data-th="議題說明"><a href="b2-1-2-searchResault.html">科專計畫績效指標</a></td>
                         <td aria-label="議題類別" data-th="議題類別">立法委員洽索資料</td>
                         <td aria-label="提案單位" data-th="提案單位">委員會提案</td>
-                        <td aria-label="提案人" data-th="提案人"><a href="b5-2-legislator.html">關敏</a></td>
+                        <td aria-label="提案人" data-th="提案人"><a href="b5-2-legislator.html">孔文吉</a></td>
                     </tr>
                     <tr>
-                        <td aria-label="年份" data-th="年份">105</td>
+                        <td aria-label="年份" data-th="年份">105-08-07</td>
                         <td aria-label="議題說明" data-th="議題說明"><a href="b2-1-2-searchResault.html">議題標題5G產業技術發展研究</a></td>
                         <td aria-label="議題類別" data-th="議題類別">立法院模擬題庫</td>
                         <td aria-label="提案單位" data-th="提案單位">立院黨團提案</td>
-                        <td aria-label="提案人" data-th="提案人"><a href="b5-2-legislator.html">李依珊</a></td>
+                        <td aria-label="提案人" data-th="提案人"><a href="b5-2-legislator.html">邱議瑩</a></td>
                     </tr>
                     <tr>
-                        <td aria-label="年份" data-th="年份">104</td>
+                        <td aria-label="年份" data-th="年份">104-05-14</td>
                         <td aria-label="議題說明" data-th="議題說明"><a href="b2-1-2-searchResault.html">專利技轉跨國效益</a></td>
                         <td aria-label="議題類別" data-th="議題類別">部次長承諾事項</td>
                         <td aria-label="提案單位" data-th="提案單位">監察院</td>
-                        <td aria-label="提案人" data-th="提案人"><a href="b5-2-legislator.html">陳大明</a></td>
+                        <td aria-label="提案人" data-th="提案人"><a href="b5-2-legislator.html">高潞.以用.巴魕剌</a></td>
                     </tr>
                     <tr>
-                        <td aria-label="年份" data-th="年份">104</td>
+                        <td aria-label="年份" data-th="年份">104-04-24</td>
                         <td aria-label="議題說明" data-th="議題說明"><a href="b2-1-2-searchResault.html">政府補助與民間收入議題</a></td>
                         <td aria-label="議題類別" data-th="議題類別">立法院模擬題庫</td>
                         <td aria-label="提案單位" data-th="提案單位">委員提案</td>
-                        <td aria-label="提案人" data-th="提案人"><a href="b5-2-legislator.html">黃阿瑪</a></td>
+                        <td aria-label="提案人" data-th="提案人"><a href="b5-2-legislator.html">鄭運鵬</a></td>
                     </tr>
                     <tr>
-                        <td aria-label="年份" data-th="年份">103</td>
+                        <td aria-label="年份" data-th="年份">103-07-06</td>
                         <td aria-label="議題說明" data-th="議題說明"><a href="b2-1-2-searchResault.html">人工智慧產業科專計畫成效</a></td>
                         <td aria-label="議題類別" data-th="議題類別">立法委員洽索資料</td>
                         <td aria-label="提案單位" data-th="提案單位">委員會提案</td>
-                        <td aria-label="提案人" data-th="提案人"><a href="b5-2-legislator.html">李曉明</a></td>
+                        <td aria-label="提案人" data-th="提案人"><a href="b5-2-legislator.html">高志鵬</a></td>
                     </tr>
                     <tr>
-                        <td aria-label="年份" data-th="年份">103</td>
+                        <td aria-label="年份" data-th="年份">103-04-20</td>
                         <td aria-label="議題說明" data-th="議題說明"><a href="b2-1-2-searchResault.html">政府補助與民間收入議題</a></td>
                         <td aria-label="議題類別" data-th="議題類別">立法院模擬題庫</td>
                         <td aria-label="提案單位" data-th="提案單位">委員提案</td>
-                        <td aria-label="提案人" data-th="提案人"><a href="b5-2-legislator.html">孟春生</a></td>
+                        <td aria-label="提案人" data-th="提案人"><a href="b5-2-legislator.html">賴瑞隆</a></td>
                     </tr>
                     <tr>
-                        <td aria-label="年份" data-th="年份">103</td>
+                        <td aria-label="年份" data-th="年份">103-01-01</td>
                         <td aria-label="議題說明" data-th="議題說明"><a href="b2-1-2-searchResault.html">自動車促投市場分析</a></td>
                         <td aria-label="議題類別" data-th="議題類別">臨時增列題庫</td>
                         <td aria-label="提案單位" data-th="提案單位">立院黨團提案</td>
-                        <td aria-label="提案人" data-th="提案人"><a href="b5-2-legislator.html">夏淼淼</a></td>
+                        <td aria-label="提案人" data-th="提案人"><a href="b5-2-legislator.html">高潞.以用.巴魕剌</a></td>
                     </tr>
                 </table>
             </div>
