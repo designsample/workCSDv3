@@ -118,20 +118,16 @@
                 <li class="active">政府補助與民間收入議題</li>
             </ol>
             <!-- / 麵包屑 -->
-            <ul class="nav nav-tabs mb-20" role="tablist">
-                <li role="presentation" class="active"><a href="#resA" aria-controls="議題查詢Search" role="tab" data-toggle="tab" class="h3">105</a></li>
-                <li role="presentation"><a href="#resB" aria-controls="議題查詢Search" role="tab" data-toggle="tab" class="h3">106</a></li>
-            </ul>
             <!-- Tab panes -->
             <div class="tab-content tab-sideContentSec">
-                <div role="tabpanel" class="tab-pane active" id="resA">
-                    <div class="row">
-                        <div class="col-xs-12 mb-10">
-                            <a href="b2-1-search.html" role="button" class="btn btn-info btn-sm"><span class="glyphicon glyphicon-arrow-left"></span>回上頁</a>
-                            <a href="b2-1-search.html" role="button" class="btn btn-info btn-sm"><span class="glyphicon glyphicon-search"></span>重新查詢</a>
-                            <a href="" role="button" class="btn btn-danger btn-sm"><span class="glyphicon glyphicon-warning-sign"></span>機密</a>
-                        </div>
-                        <!-- <div class="col-xs-12">
+                <div class="row">
+                    <div class="col-xs-12 mb-10">
+                        <a href="b2-1-search.html" role="button" class="btn btn-info btn-sm"><span class="glyphicon glyphicon-arrow-left"></span>回上頁</a>
+                        <a href="b2-1-search.html" role="button" class="btn btn-info btn-sm"><span class="glyphicon glyphicon-search"></span>重新查詢</a>
+                        <a href="" role="button" class="btn btn-danger btn-sm"><span class="glyphicon glyphicon-warning-sign"></span>機密</a>
+                        <a href="" role="button" data-toggle="modal" data-target="#ModalA" class="btn btn-info btn-sm"><span class="glyphicon glyphicon-new-window"></span>查看關聯計畫</a>
+                    </div>
+                    <!-- <div class="col-xs-12">
                             <table class="table">
                                 <tr>
                                     <td style="width: 7em">議題編號</td>
@@ -213,502 +209,153 @@
                                 </tr>
                             </table>
                         </div> -->
-                        <!-- / 中間區塊 -->
-                        <!-- Modal -->
-                        <div class="modal fade" id="ModalA" tabindex="-1" role="dialog" aria-labelledby="ModalLabelA">
-                            <div class="modal-dialog modal-lg" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                        <h4 class="modal-title" id="ModalLabelA">關聯計畫</h4>
+                    <!-- / 中間區塊 -->
+                    <!-- Modal -->
+                    <div class="modal fade" id="ModalA" tabindex="-1" role="dialog" aria-labelledby="ModalLabelA">
+                        <div class="modal-dialog modal-lg" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <h4 class="modal-title" id="ModalLabelA">關聯計畫</h4>
+                                </div>
+                                <div class="modal-body row">
+                                    <!-- 表格開始 -->
+                                    <div class="col-xs-12">
+                                        <table class="rwd-table">
+                                            <tr>
+                                                <th>類別<a href="" class="glyphicon glyphicon-chevron-down"></a></th>
+                                                <th>計畫編號<a href="" class="glyphicon glyphicon-chevron-down"></a></th>
+                                                <th>計畫名稱<a href="" class="glyphicon glyphicon-chevron-down"></a></th>
+                                                <th>執行單位<a href="" class="glyphicon glyphicon-chevron-down"></a></th>
+                                                <th>承辦科別<a href="" class="glyphicon glyphicon-chevron-down"></a></th>
+                                                <th>計畫金額(千元)<a href="" class="glyphicon glyphicon-chevron-down"></a></th>
+                                                <th>檔案<a href="" class="glyphicon glyphicon-chevron-down"></a></th>
+                                            </tr>
+                                            <tr>
+                                                <td aria-label="類別" data-th="類別">學科</td>
+                                                <td aria-label="計畫編號" data-th="計畫編號">1060336</td>
+                                                <td aria-label="計畫名稱" data-th="計畫名稱">智財佈局推動及環境提升計畫</td>
+                                                <td aria-label="執行單位" data-th="執行單位">工研院技轉中心</td>
+                                                <td aria-label="承辦科別" data-th="承辦科別">科技管理科</td>
+                                                <td aria-label="計畫金額(千元)" data-th="計畫金額(千元)">25,231</td>
+                                                <td aria-label="檔案" data-th="檔案"><a href="" role="button" class="btn btn-info btn-sm"><span class="glyphicon glyphicon-save"></span>下載</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td aria-label="類別" data-th="類別">法科</td>
+                                                <td aria-label="計畫編號" data-th="計畫編號">1060337</td>
+                                                <td aria-label="計畫名稱" data-th="計畫名稱">智慧手持裝置核心技術攻堅計畫</td>
+                                                <td aria-label="執行單位" data-th="執行單位">工研院本部</td>
+                                                <td aria-label="承辦科別" data-th="承辦科別">創新研發科</td>
+                                                <td aria-label="計畫金額(千元)" data-th="計畫金額(千元)">500</td>
+                                                <td aria-label="檔案" data-th="檔案"><a href="" role="button" class="btn btn-info btn-sm"><span class="glyphicon glyphicon-save"></span>下載</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td aria-label="類別" data-th="類別">業科</td>
+                                                <td aria-label="計畫編號" data-th="計畫編號">1060338</td>
+                                                <td aria-label="計畫名稱" data-th="計畫名稱">工研院創新前瞻技術研究計畫</td>
+                                                <td aria-label="執行單位" data-th="執行單位">工研院本部</td>
+                                                <td aria-label="承辦科別" data-th="承辦科別">創新研發科</td>
+                                                <td aria-label="計畫金額(千元)" data-th="計畫金額(千元)">210</td>
+                                                <td aria-label="檔案" data-th="檔案"><a href="" role="button" class="btn btn-info btn-sm"><span class="glyphicon glyphicon-save"></span>下載</a></td>
+                                            </tr>
+                                        </table>
                                     </div>
-                                    <div class="modal-body row">
-                                        <!-- 表格開始 -->
-                                        <div class="col-xs-12">
-                                            <table class="rwd-table">
-                                                <tr>
-                                                    <th>類別<a href="" class="glyphicon glyphicon-chevron-down"></a></th>
-                                                    <th>計畫編號<a href="" class="glyphicon glyphicon-chevron-down"></a></th>
-                                                    <th>計畫名稱<a href="" class="glyphicon glyphicon-chevron-down"></a></th>
-                                                    <th>執行單位<a href="" class="glyphicon glyphicon-chevron-down"></a></th>
-                                                    <th>承辦科別<a href="" class="glyphicon glyphicon-chevron-down"></a></th>
-                                                    <th>計畫金額(千元)<a href="" class="glyphicon glyphicon-chevron-down"></a></th>
-                                                    <th>檔案<a href="" class="glyphicon glyphicon-chevron-down"></a></th>
-                                                </tr>
-                                                <tr>
-                                                    <td aria-label="類別" data-th="類別">學科</td>
-                                                    <td aria-label="計畫編號" data-th="計畫編號">1060336</td>
-                                                    <td aria-label="計畫名稱" data-th="計畫名稱">智財佈局推動及環境提升計畫</td>
-                                                    <td aria-label="執行單位" data-th="執行單位">工研院技轉中心</td>
-                                                    <td aria-label="承辦科別" data-th="承辦科別">科技管理科</td>
-                                                    <td aria-label="計畫金額(千元)" data-th="計畫金額(千元)">25,231</td>
-                                                    <td aria-label="檔案" data-th="檔案"><a href="" role="button" class="btn btn-info btn-sm"><span class="glyphicon glyphicon-save"></span>下載</a></td>
-                                                </tr>
-                                                <tr>
-                                                    <td aria-label="類別" data-th="類別">法科</td>
-                                                    <td aria-label="計畫編號" data-th="計畫編號">1060337</td>
-                                                    <td aria-label="計畫名稱" data-th="計畫名稱">智慧手持裝置核心技術攻堅計畫</td>
-                                                    <td aria-label="執行單位" data-th="執行單位">工研院本部</td>
-                                                    <td aria-label="承辦科別" data-th="承辦科別">創新研發科</td>
-                                                    <td aria-label="計畫金額(千元)" data-th="計畫金額(千元)">500</td>
-                                                    <td aria-label="檔案" data-th="檔案"><a href="" role="button" class="btn btn-info btn-sm"><span class="glyphicon glyphicon-save"></span>下載</a></td>
-                                                </tr>
-                                                <tr>
-                                                    <td aria-label="類別" data-th="類別">業科</td>
-                                                    <td aria-label="計畫編號" data-th="計畫編號">1060338</td>
-                                                    <td aria-label="計畫名稱" data-th="計畫名稱">工研院創新前瞻技術研究計畫</td>
-                                                    <td aria-label="執行單位" data-th="執行單位">工研院本部</td>
-                                                    <td aria-label="承辦科別" data-th="承辦科別">創新研發科</td>
-                                                    <td aria-label="計畫金額(千元)" data-th="計畫金額(千元)">210</td>
-                                                    <td aria-label="檔案" data-th="檔案"><a href="" role="button" class="btn btn-info btn-sm"><span class="glyphicon glyphicon-save"></span>下載</a></td>
-                                                </tr>
-                                            </table>
-                                        </div>
-                                        <!-- / 表格結束 -->
-                                        <div class="col-xs-12 pv-20">
-                                            <div class="center-block text-center">
-                                                <div class="btn-group" role="group" aria-label="First group">
-                                                    <button type="button" class="btn btn-default btn-sm">&#10094;</button>
-                                                    <button type="button" class="btn btn-default btn-sm active">1</button>
-                                                    <button type="button" class="btn btn-default btn-sm">&#10095;</button>
-                                                </div>
+                                    <!-- / 表格結束 -->
+                                    <div class="col-xs-12 pv-20">
+                                        <div class="center-block text-center">
+                                            <div class="btn-group" role="group" aria-label="First group">
+                                                <button type="button" class="btn btn-default btn-sm">&#10094;</button>
+                                                <button type="button" class="btn btn-default btn-sm active">1</button>
+                                                <button type="button" class="btn btn-default btn-sm">&#10095;</button>
                                             </div>
                                         </div>
-                                        <!-- / 上下一頁 -->
                                     </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-default" data-dismiss="modal">關閉</button>
-                                        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
-                                    </div>
+                                    <!-- / 上下一頁 -->
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">關閉</button>
+                                    <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
                                 </div>
                             </div>
                         </div>
-                        <!-- / Modal -->
-                        <div class="col-xs-12 col-lg-6">
-                            <table class="table m-0">
-                                <tr>
-                                    <td>提出日期</td>
-                                    <td>107-01-01</td>
-                                </tr>
-                                <tr>
-                                    <td>議題類別</td>
-                                    <td>部次長承諾事項</td>
-                                </tr>
-                                <tr>
-                                    <td>議題說明</td>
-                                    <td>政府補助與民間收入議題</td>
-                                </tr>
-                                <tr>
-                                    <td>提案單位</td>
-                                    <td>委員提案</td>
-                                </tr>
-                                <tr>
-                                    <td>提案人</td>
-                                    <td><a href="b5-2-legislator.html" target="_blank">蘇震清</a></td>
-                                </tr>
-                            </table>
-                        </div>
-                        <!-- / 左欄 -->
-                        <div class="col-xs-12 col-lg-6">
-                            <table class="table m-0">
-                                <tr>
-                                    <td style="width: 7em">議題編號</td>
-                                    <td>107-1-1-1</td>
-                                </tr>
-                                <tr>
-                                    <td>回覆內容</td>
-                                    <td>
-                                        本議題關注到政府補助的對象與民間收入調配的因應之策略,根據政府法規 本議題關注到政府補助的對象與民間收入調配的因應之策略，根據本議題關注到政府補助的對象與民本議題關注到政府補助的對象與民間收入調配的因應之本議題關注到政府補助的對象與民間收入調配的因應之策略，根據政本議題關注到政本議題關注到政府補助的對象與民間收入調配的因應之策略，根據政本議題本議題關注到政府補助的對象入調配
-                                        <div class="col-xs-12 p-0 ic-btn-outter">
-                                            <a href="" target="_blank" class="btn col-xs-12 col-md-4 col-lg-4 mb-10"><span class="ic ic-word"></span>政府補助關聯一覽表.doc</a>
-                                            <a href="" target="_blank" class="btn col-xs-12 col-md-4 col-lg-4 mb-10"><span class="ic ic-word"></span>民間收入分析簡報.pdf</a>
-                                            <a href="" target="_blank" class="btn col-xs-12 col-md-4 col-lg-4 mb-10"><span class="ic ic-ppt"></span>政府補助關聯一覽表.doc</a>
-                                            <a href="" target="_blank" class="btn col-xs-12 col-md-4 col-lg-4 mb-10"><span class="ic ic-excel"></span>民間收入分析簡報.pdf</a>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>承辦科</td>
-                                    <td>科專政策科</td>
-                                </tr>
-                                <tr>
+                    </div>
+                    <!-- / Modal -->
+                    <div class="col-xs-12 col-lg-6">
+                        <table class="table m-0">
+                            <tr>
+                                <td style="width: 7em">議題編號</td>
+                                <td>107-1-1-1</td>
+                            </tr>
+                            <tr>
+                                <td>提出日期</td>
+                                <td>107-01-01</td>
+                            </tr>
+                            <tr>
+                                <td>議題類別</td>
+                                <td>部次長承諾事項</td>
+                            </tr>
+                            <tr>
+                                <td>議題說明</td>
+                                <td>政府補助與民間收入議題
+                                    <div class="col-xs-12 p-0 ic-btn-outter">
+                                        <a href="" target="_blank" class="btn col-xs-12 col-md-4 col-lg-4 mb-10"><span class="ic ic-word"></span>政府補助關聯一覽表.doc</a>
+                                        <a href="" target="_blank" class="btn col-xs-12 col-md-4 col-lg-4 mb-10"><span class="ic ic-word"></span>民間收入分析簡報.pdf</a>
+                                        <a href="" target="_blank" class="btn col-xs-12 col-md-4 col-lg-4 mb-10"><span class="ic ic-ppt"></span>政府補助關聯一覽表.doc</a>
+                                        <a href="" target="_blank" class="btn col-xs-12 col-md-4 col-lg-4 mb-10"><span class="ic ic-excel"></span>民間收入分析簡報.pdf</a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>提案單位</td>
+                                <td>委員提案</td>
+                            </tr>
+                            <tr>
+                                <td>提案人</td>
+                                <td><a href="b5-2-legislator.html" target="_blank">蘇震清</a></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <!-- / 左欄 -->
+                    <div class="col-xs-12 col-lg-6">
+                        <table class="table m-0">
+                            <tr>
+                                <td style="width: 7em">回覆內容</td>
+                                <td>
+                                    <ol>
+                                        <li><span class="color-red">大台中地區用水需求每日155萬噸，</span>由石岡壩取水<span class="color-red">85</span>萬噸、鯉魚潭水庫出水<span class="color-red">65</span>萬噸及地下水<span class="color-red">5</span>萬噸供應。</li>
+                                        <li><span class="color-red">大甲溪高濁度或汙染時，石岡壩減量取水25</span>萬噸並立即<span class="color-red">啟動食水嵙溪水源40</span>萬噸<span class="color-red">稀釋減低影響</span>，加上鯉魚潭水庫<span class="color-red">85</span>萬噸及地下水<span class="color-red">5</span>萬噸，因應<span class="color-red">每日155萬噸用水需求</span>。</li>
+                                    </ol>
+                                    <div class="col-xs-12 p-0 ic-btn-outter">
+                                        <a href="" target="_blank" class="btn col-xs-12 col-md-4 col-lg-4 mb-10"><span class="ic ic-word"></span>政府補助關聯一覽表.doc</a>
+                                        <a href="" target="_blank" class="btn col-xs-12 col-md-4 col-lg-4 mb-10"><span class="ic ic-word"></span>民間收入分析簡報.doc</a>
+                                        <a href="" target="_blank" class="btn col-xs-12 col-md-4 col-lg-4 mb-10"><span class="ic ic-ppt"></span>政府補助關聯一覽表.ppt</a>
+                                        <a href="" target="_blank" class="btn col-xs-12 col-md-4 col-lg-4 mb-10"><span class="ic ic-excel"></span>民間收入分析簡報.xls</a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>承辦科</td>
+                                <td>科專政策科</td>
+                            </tr>
+                            <!-- <tr>
                                     <td>關聯計畫</td>
                                     <td>
                                         <a href="" role="button" data-toggle="modal" data-target="#ModalA" class="btn btn-info col-xs-12 btn-sm mb-10"><span class="glyphicon glyphicon-new-window"></span>查看關聯計畫</a>
                                     </td>
-                                </tr>
-                                <tr>
-                                    <td>關聯網站</td>
-                                    <td>
-                                        <a href="https://www.moea.gov.tw/Mns/doit" target="_blank" class="btn btn-info col-xs-12 btn-sm mb-10"><span class="glyphicon glyphicon-new-window"></span>經濟部技術處</a>
-                                        <br>
-                                        <a href="https://www.csd.org.tw/" target="_blank" class="btn btn-info col-xs-12 btn-sm mb-10"><span class="glyphicon glyphicon-new-window"></span>中衛發展中心</a>
-                                    </td>
-                                </tr>
-                            </table>
-                            <!-- Modal -->
-                            <div class="modal fade" id="ModalA" tabindex="-1" role="dialog" aria-labelledby="ModalLabelA">
-                                <div class="modal-dialog modal-lg" role="document">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                            <h4 class="modal-title" id="ModalLabelA">關聯計畫</h4>
-                                        </div>
-                                        <div class="modal-body row">
-                                            <!-- 表格開始 -->
-                                            <div class="col-xs-12">
-                                                <table class="rwd-table">
-                                                    <tr>
-                                                        <th>類別<a href="" class="glyphicon glyphicon-chevron-down"></a></th>
-                                                        <th>計畫編號<a href="" class="glyphicon glyphicon-chevron-down"></a></th>
-                                                        <th>計畫名稱<a href="" class="glyphicon glyphicon-chevron-down"></a></th>
-                                                        <th>執行單位<a href="" class="glyphicon glyphicon-chevron-down"></a></th>
-                                                        <th>承辦科別<a href="" class="glyphicon glyphicon-chevron-down"></a></th>
-                                                        <th>計畫金額(千元)<a href="" class="glyphicon glyphicon-chevron-down"></a></th>
-                                                        <th>檔案<a href="" class="glyphicon glyphicon-chevron-down"></a></th>
-                                                    </tr>
-                                                    <tr>
-                                                        <td aria-label="類別" data-th="類別">學科</td>
-                                                        <td aria-label="計畫編號" data-th="計畫編號">1060336</td>
-                                                        <td aria-label="計畫名稱" data-th="計畫名稱">智財佈局推動及環境提升計畫</td>
-                                                        <td aria-label="執行單位" data-th="執行單位">工研院技轉中心</td>
-                                                        <td aria-label="承辦科別" data-th="承辦科別">科技管理科</td>
-                                                        <td aria-label="計畫金額(千元)" data-th="計畫金額(千元)">25,231</td>
-                                                        <td aria-label="檔案" data-th="檔案"><a href="" role="button" class="btn btn-info btn-sm"><span class="glyphicon glyphicon-save"></span>下載</a></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td aria-label="類別" data-th="類別">法科</td>
-                                                        <td aria-label="計畫編號" data-th="計畫編號">1060337</td>
-                                                        <td aria-label="計畫名稱" data-th="計畫名稱">智慧手持裝置核心技術攻堅計畫</td>
-                                                        <td aria-label="執行單位" data-th="執行單位">工研院本部</td>
-                                                        <td aria-label="承辦科別" data-th="承辦科別">創新研發科</td>
-                                                        <td aria-label="計畫金額(千元)" data-th="計畫金額(千元)">500</td>
-                                                        <td aria-label="檔案" data-th="檔案"><a href="" role="button" class="btn btn-info btn-sm"><span class="glyphicon glyphicon-save"></span>下載</a></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td aria-label="類別" data-th="類別">業科</td>
-                                                        <td aria-label="計畫編號" data-th="計畫編號">1060338</td>
-                                                        <td aria-label="計畫名稱" data-th="計畫名稱">工研院創新前瞻技術研究計畫</td>
-                                                        <td aria-label="執行單位" data-th="執行單位">工研院本部</td>
-                                                        <td aria-label="承辦科別" data-th="承辦科別">創新研發科</td>
-                                                        <td aria-label="計畫金額(千元)" data-th="計畫金額(千元)">210</td>
-                                                        <td aria-label="檔案" data-th="檔案"><a href="" role="button" class="btn btn-info btn-sm"><span class="glyphicon glyphicon-save"></span>下載</a></td>
-                                                    </tr>
-                                                </table>
-                                            </div>
-                                            <!-- / 表格結束 -->
-                                            <div class="col-xs-12 pv-20">
-                                                <div class="center-block text-center">
-                                                    <div class="btn-group" role="group" aria-label="First group">
-                                                        <button type="button" class="btn btn-default btn-sm">&#10094;</button>
-                                                        <button type="button" class="btn btn-default btn-sm active">1</button>
-                                                        <button type="button" class="btn btn-default btn-sm">&#10095;</button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- / 上下一頁 -->
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-default" data-dismiss="modal">關閉</button>
-                                            <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- / Modal -->
-                        </div>
-                        <!-- / 右欄 -->
+                                </tr> -->
+                            <tr>
+                                <td>關聯網站</td>
+                                <td>
+                                    <a href="https://www.moea.gov.tw/Mns/doit" target="_blank" class="col-xs-12 mb-10"><span class="glyphicon glyphicon-new-window"></span>經濟部技術處</a>
+                                    <br>
+                                    <a href="https://www.csd.org.tw/" target="_blank" class="col-xs-12 mb-10"><span class="glyphicon glyphicon-new-window"></span>中衛發展中心</a>
+                                </td>
+                            </tr>
+                        </table>
                     </div>
+                    <!-- / 右欄 -->
                 </div>
-                <!-- / 第一筆資料 tabpanel -->
-                <div role="tabpanel" class="tab-pane" id="resB">
-                    <div class="row">
-                        <div class="col-xs-12 mb-10">
-                            <a href="b2-1-search.html" role="button" class="btn btn-info btn-sm"><span class="glyphicon glyphicon-arrow-left"></span>回上頁</a>
-                            <a href="b2-1-search.html" role="button" class="btn btn-info btn-sm"><span class="glyphicon glyphicon-search"></span>重新查詢</a>
-                        </div>
-                        <!-- <div class="col-xs-12">
-                            <table class="table">
-                                <tr>
-                                    <td style="width: 7em">議題編號</td>
-                                    <td>106-1-1-1</td>
-                                </tr>
-                                <tr>
-                                    <td>類別</td>
-                                    <td>立法院模擬題庫</td>
-                                </tr>
-                                <tr>
-                                    <td>議題說明</td>
-                                    <td>政府補助與民間收入議題</td>
-                                </tr>
-                                <tr>
-                                    <td>提案單位</td>
-                                    <td>委員提案</td>
-                                </tr>
-                                <tr>
-                                    <td>提案人</td>
-                                    <td><a href="b5-2-legislator.html" target="_blank">陳大明</a></td>
-                                </tr>
-                                <tr>
-                                    <td>提出日期</td>
-                                    <td>106-01-01</td>
-                                </tr>
-                                <tr>
-                                    <td>承辦科</td>
-                                    <td>科部甲</td>
-                                </tr>
-                                <tr>
-                                    <td>回覆內容</td>
-                                    <td>
-                                        本議題關注到政府補助的對象與民間收入調配的因應之策略,根據政府法規 本議題關注到政府補助的對象與民間收入調配的因應之策略，根據本議題關注到政府補助的對象與民本議題關注到政府補助的對象與民間收入調配的因應之本議題關注到政府補助的對象與民間收入調配的因應之策略，根據政本議題關注到政本議題關注到政府補助的對象與民間收入調配的因應之策略，根據政本議題本議題關注到政府補助的對象入調配
-                                        <div class="col-xs-12 p-0 ic-btn-outter">
-                                            <a href="" target="_blank" class="btn col-xs-12 col-md-4 col-lg-3 mb-10"><span class="ic ic-word"></span>政府補助關聯一覽表.doc</a>
-                                            <a href="" target="_blank" class="btn col-xs-12 col-md-4 col-lg-3 mb-10"><span class="ic ic-word"></span>民間收入分析簡報.pdf</a>
-                                            <a href="" target="_blank" class="btn col-xs-12 col-md-4 col-lg-3 mb-10"><span class="ic ic-ppt"></span>政府補助關聯一覽表.doc</a>
-                                            <a href="" target="_blank" class="btn col-xs-12 col-md-4 col-lg-3 mb-10"><span class="ic ic-excel"></span>民間收入分析簡報.pdf</a>
-                                        </div>
-                                        
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>回覆日期</td>
-                                    <td>106/1/10</td>
-                                </tr>
-                                <tr>
-                                    <td>關聯檔案</td>
-                                    <td>
-                                        <a href="" target="_blank" class="btn btn-info col-xs-12 btn-sm mb-10"><span class="glyphicon glyphicon-save"></span>政府補助關聯一覽表.doc</a>
-                                        <a href="" target="_blank" class="btn btn-info col-xs-12 btn-sm mb-10"><span class="glyphicon glyphicon-save"></span>民間收入分析簡報.pdf</a>
-                                        <a href="" target="_blank" class="btn btn-info col-xs-12 btn-sm mb-10"><span class="glyphicon glyphicon-save"></span>歷年補助狀況分析報告.odf</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>關聯計畫</td>
-                                    <td>
-                                        <a href="" role="button" data-toggle="modal" data-target="#ModalB" class="btn btn-info col-xs-12 btn-sm mb-10"><span class="glyphicon glyphicon-new-window"></span>查看關聯計畫</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>關聯網站</td>
-                                    <td>
-                                        <a href="https://www.moea.gov.tw/Mns/doit" target="_blank" class="btn btn-info col-xs-12 btn-sm mb-10"><span class="glyphicon glyphicon-new-window"></span>經濟部技術處</a>
-                                        <br>
-                                        <a href="https://www.csd.org.tw/" target="_blank" class="btn btn-info col-xs-12 btn-sm mb-10"><span class="glyphicon glyphicon-new-window"></span>中衛發展中心</a>
-                                    </td>
-                                </tr>
-                            </table>
-                            
-                        </div> -->
-                        <!-- / 中間區塊 -->
-                        <!-- Modal -->
-                        <div class="modal fade" id="ModalB" tabindex="-1" role="dialog" aria-labelledby="ModalLabelB">
-                            <div class="modal-dialog modal-lg" role="document">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                        <h4 class="modal-title" id="ModalLabelB">關聯計畫</h4>
-                                    </div>
-                                    <div class="modal-body row">
-                                        <!-- 表格開始 -->
-                                        <div class="col-xs-12">
-                                            <table class="rwd-table">
-                                                <tr>
-                                                    <th>類別<a href="" class="glyphicon glyphicon-chevron-down"></a></th>
-                                                    <th>計畫編號<a href="" class="glyphicon glyphicon-chevron-down"></a></th>
-                                                    <th>計畫名稱<a href="" class="glyphicon glyphicon-chevron-down"></a></th>
-                                                    <th>執行單位<a href="" class="glyphicon glyphicon-chevron-down"></a></th>
-                                                    <th>承辦科別<a href="" class="glyphicon glyphicon-chevron-down"></a></th>
-                                                    <th>計畫金額<a href="" class="glyphicon glyphicon-chevron-down"></a></th>
-                                                    <th>檔案<a href="" class="glyphicon glyphicon-chevron-down"></a></th>
-                                                </tr>
-                                                <tr>
-                                                    <td aria-label="類別" data-th="類別">學科</td>
-                                                    <td aria-label="計畫編號" data-th="計畫編號">1060336</td>
-                                                    <td aria-label="計畫名稱" data-th="計畫名稱">智財佈局推動及環境提升計畫</td>
-                                                    <td aria-label="執行單位" data-th="執行單位">工研院技轉中心</td>
-                                                    <td aria-label="承辦科別" data-th="承辦科別">科技管理科</td>
-                                                    <td aria-label="計畫金額" data-th="計畫金額">25,231</td>
-                                                    <td aria-label="檔案" data-th="檔案"><a href="" role="button" class="btn btn-info btn-sm"><span class="glyphicon glyphicon-save"></span>下載</a></td>
-                                                </tr>
-                                                <tr>
-                                                    <td aria-label="類別" data-th="類別">法科</td>
-                                                    <td aria-label="計畫編號" data-th="計畫編號">1060337</td>
-                                                    <td aria-label="計畫名稱" data-th="計畫名稱">智慧手持裝置核心技術攻堅計畫</td>
-                                                    <td aria-label="執行單位" data-th="執行單位">工研院本部</td>
-                                                    <td aria-label="承辦科別" data-th="承辦科別">創新研發科</td>
-                                                    <td aria-label="計畫金額" data-th="計畫金額">500</td>
-                                                    <td aria-label="檔案" data-th="檔案"><a href="" role="button" class="btn btn-info btn-sm"><span class="glyphicon glyphicon-save"></span>下載</a></td>
-                                                </tr>
-                                                <tr>
-                                                    <td aria-label="類別" data-th="類別">業科</td>
-                                                    <td aria-label="計畫編號" data-th="計畫編號">1060338</td>
-                                                    <td aria-label="計畫名稱" data-th="計畫名稱">工研院創新前瞻技術研究計畫</td>
-                                                    <td aria-label="執行單位" data-th="執行單位">工研院本部</td>
-                                                    <td aria-label="承辦科別" data-th="承辦科別">創新研發科</td>
-                                                    <td aria-label="計畫金額" data-th="計畫金額">210</td>
-                                                    <td aria-label="檔案" data-th="檔案"><a href="" role="button" class="btn btn-info btn-sm"><span class="glyphicon glyphicon-save"></span>下載</a></td>
-                                                </tr>
-                                            </table>
-                                        </div>
-                                        <!-- / 表格結束 -->
-                                        <div class="col-xs-12 pv-20">
-                                            <div class="center-block text-center">
-                                                <div class="btn-group" role="group" aria-label="First group">
-                                                    <button type="button" class="btn btn-default btn-sm">&#10094;</button>
-                                                    <button type="button" class="btn btn-default btn-sm active">1</button>
-                                                    <button type="button" class="btn btn-default btn-sm">&#10095;</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- / 上下一頁 -->
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-default" data-dismiss="modal">關閉</button>
-                                        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- / Modal -->
-                        <div class="col-xs-12 col-lg-6">
-                            <table class="table m-0">
-                                <tr>
-                                    <td>提出日期</td>
-                                    <td>106-01-01</td>
-                                </tr>
-                                <tr>
-                                    <td>議題類別</td>
-                                    <td>部次長承諾事項</td>
-                                </tr>
-                                <tr>
-                                    <td>議題說明</td>
-                                    <td>政府補助與民間收入議題</td>
-                                </tr>
-                                <tr>
-                                    <td>提案單位</td>
-                                    <td>委員提案</td>
-                                </tr>
-                                <tr>
-                                    <td>提案人</td>
-                                    <td><a href="b5-2-legislator.html" target="_blank">蘇震清</a></td>
-                                </tr>
-                            </table>
-                        </div>
-                        <!-- / 左欄 -->
-                        <div class="col-xs-12 col-lg-6">
-                            <table class="table m-0">
-                                <tr>
-                                    <td style="width: 7em">議題編號</td>
-                                    <td>106-1-1-1</td>
-                                </tr>
-                                <tr>
-                                    <td>回覆內容</td>
-                                    <td>
-                                        本議題關注到政府補助的對象與民間收入調配的因應之策略,根據政府法規 本議題關注到政府補助的對象與民間收入調配的因應之策略，根據本議題關注到政府補助的對象與民本議題關注到政府補助的對象與民間收入調配的因應之本議題關注到政府補助的對象與民間收入調配的因應之策略，根據政本議題關注到政本議題關注到政府補助的對象與民間收入調配的因應之策略，根據政本議題本議題關注到政府補助的對象入調配
-                                        <div class="col-xs-12 p-0 ic-btn-outter">
-                                            <a href="" target="_blank" class="btn col-xs-12 col-md-4 col-lg-4 mb-10"><span class="ic ic-word"></span>政府補助關聯一覽表.doc</a>
-                                            <a href="" target="_blank" class="btn col-xs-12 col-md-4 col-lg-4 mb-10"><span class="ic ic-word"></span>民間收入分析簡報.pdf</a>
-                                            <a href="" target="_blank" class="btn col-xs-12 col-md-4 col-lg-4 mb-10"><span class="ic ic-ppt"></span>政府補助關聯一覽表.doc</a>
-                                            <a href="" target="_blank" class="btn col-xs-12 col-md-4 col-lg-4 mb-10"><span class="ic ic-excel"></span>民間收入分析簡報.pdf</a>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>承辦科</td>
-                                    <td>科專政策科</td>
-                                </tr>
-                                <tr>
-                                    <td>關聯計畫</td>
-                                    <td>
-                                        <a href="" role="button" data-toggle="modal" data-target="#ModalB" class="btn btn-info col-xs-12 btn-sm mb-10"><span class="glyphicon glyphicon-new-window"></span>查看關聯計畫</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>關聯網站</td>
-                                    <td>
-                                        <a href="https://www.moea.gov.tw/Mns/doit" target="_blank" class="btn btn-info col-xs-12 btn-sm mb-10"><span class="glyphicon glyphicon-new-window"></span>經濟部技術處</a>
-                                        <br>
-                                        <a href="https://www.csd.org.tw/" target="_blank" class="btn btn-info col-xs-12 btn-sm mb-10"><span class="glyphicon glyphicon-new-window"></span>中衛發展中心</a>
-                                    </td>
-                                </tr>
-                            </table>
-                            <!-- Modal -->
-                            <div class="modal fade" id="ModalB" tabindex="-1" role="dialog" aria-labelledby="ModalLabelB">
-                                <div class="modal-dialog modal-lg" role="document">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                            <h4 class="modal-title" id="ModalLabelB">關聯計畫</h4>
-                                        </div>
-                                        <div class="modal-body row">
-                                            <!-- 表格開始 -->
-                                            <div class="col-xs-12">
-                                                <table class="rwd-table">
-                                                    <tr>
-                                                        <th>類別<a href="" class="glyphicon glyphicon-chevron-down"></a></th>
-                                                        <th>計畫編號<a href="" class="glyphicon glyphicon-chevron-down"></a></th>
-                                                        <th>計畫名稱<a href="" class="glyphicon glyphicon-chevron-down"></a></th>
-                                                        <th>執行單位<a href="" class="glyphicon glyphicon-chevron-down"></a></th>
-                                                        <th>承辦科別<a href="" class="glyphicon glyphicon-chevron-down"></a></th>
-                                                        <th>計畫金額(千元)<a href="" class="glyphicon glyphicon-chevron-down"></a></th>
-                                                        <th>檔案<a href="" class="glyphicon glyphicon-chevron-down"></a></th>
-                                                    </tr>
-                                                    <tr>
-                                                        <td aria-label="類別" data-th="類別">學科</td>
-                                                        <td aria-label="計畫編號" data-th="計畫編號">1060336</td>
-                                                        <td aria-label="計畫名稱" data-th="計畫名稱">智財佈局推動及環境提升計畫</td>
-                                                        <td aria-label="執行單位" data-th="執行單位">工研院技轉中心</td>
-                                                        <td aria-label="承辦科別" data-th="承辦科別">科技管理科</td>
-                                                        <td aria-label="計畫金額(千元)" data-th="計畫金額(千元)">25,231</td>
-                                                        <td aria-label="檔案" data-th="檔案"><a href="" role="button" class="btn btn-info btn-sm"><span class="glyphicon glyphicon-save"></span>下載</a></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td aria-label="類別" data-th="類別">法科</td>
-                                                        <td aria-label="計畫編號" data-th="計畫編號">1060337</td>
-                                                        <td aria-label="計畫名稱" data-th="計畫名稱">智慧手持裝置核心技術攻堅計畫</td>
-                                                        <td aria-label="執行單位" data-th="執行單位">工研院本部</td>
-                                                        <td aria-label="承辦科別" data-th="承辦科別">創新研發科</td>
-                                                        <td aria-label="計畫金額(千元)" data-th="計畫金額(千元)">500</td>
-                                                        <td aria-label="檔案" data-th="檔案"><a href="" role="button" class="btn btn-info btn-sm"><span class="glyphicon glyphicon-save"></span>下載</a></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td aria-label="類別" data-th="類別">業科</td>
-                                                        <td aria-label="計畫編號" data-th="計畫編號">1060338</td>
-                                                        <td aria-label="計畫名稱" data-th="計畫名稱">工研院創新前瞻技術研究計畫</td>
-                                                        <td aria-label="執行單位" data-th="執行單位">工研院本部</td>
-                                                        <td aria-label="承辦科別" data-th="承辦科別">創新研發科</td>
-                                                        <td aria-label="計畫金額(千元)" data-th="計畫金額(千元)">210</td>
-                                                        <td aria-label="檔案" data-th="檔案"><a href="" role="button" class="btn btn-info btn-sm"><span class="glyphicon glyphicon-save"></span>下載</a></td>
-                                                    </tr>
-                                                </table>
-                                            </div>
-                                            <!-- / 表格結束 -->
-                                            <div class="col-xs-12 pv-20">
-                                                <div class="center-block text-center">
-                                                    <div class="btn-group" role="group" aria-label="First group">
-                                                        <button type="button" class="btn btn-default btn-sm">&#10094;</button>
-                                                        <button type="button" class="btn btn-default btn-sm active">1</button>
-                                                        <button type="button" class="btn btn-default btn-sm">&#10095;</button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- / 上下一頁 -->
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-default" data-dismiss="modal">關閉</button>
-                                            <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- / Modal -->
-                        </div>
-                        <!-- / 右欄 -->
-                    </div>
-                </div>
-                <!-- / 第二筆資料 -->
             </div>
-        </div>
         </div>
         <!-- / 最外row -->
     </section>

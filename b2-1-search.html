@@ -152,7 +152,20 @@
                                                     <div class="input-group-btn">
                                                         <a data-toggle="popover" class="btn-group date btn" data-container="body" data-placement="bottom" type="button" role="button" data-html="true" href="#" id="login">期間<span class="glyphicon glyphicon-chevron-down" style="margin:3px 0 0 0"></span></a>
                                                         <a href="b2-1-1-search.html" class="btn btn-info btn-group" role="button">查詢</a>
-                                                        <a href="" class="btn question glyphicon glyphicon-question-sign" role="button"></a>
+                                                        
+                                                        <a class="my-tool-tip btn question glyphicon" data-toggle="tooltip" data-placement="top" title="字串空格字串邏輯為or，字串+字串邏輯為and。">
+                                                            <i class='glyphicon glyphicon-question-sign'></i>
+                                                        </a>
+                                                        <script type="text/javascript">
+                                                            $("a.my-tool-tip").tooltip();
+                                                            $(function () {
+                                                                $('[data-toggle="tooltip"]').tooltip()
+                                                            })
+                                                        </script>
+
+ 
+
+
                                                     </div>
 
                                                 </div>
@@ -186,6 +199,7 @@
                                                                 <option value="2">105</option>
                                                                 <option value="1">106</option>
                                                             </select>
+                                                            <p class="inline-block">年</p>
                                                         </li>
                                                     </ul>
                                                 </div>
