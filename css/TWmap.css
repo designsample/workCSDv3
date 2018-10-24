@@ -1,7 +1,37 @@
 @charset "UTF-8";
 
 /*臺灣地圖*/
-
+#TPE>path,
+#NTP>path,
+#KL>path,
+#TYC>path,
+#XZ>path,
+#XZC>path,
+#MEW>path,
+#TCC>path,
+#CHC>path,
+#CH>path,
+#YL>path,
+#CYC>path,
+#CY>path,
+#TNC>path,
+#KSC>path,
+#PT>path,
+#TD>path,
+#HL>path,
+#YEL>path,
+#NT>path,
+#L1>path,
+#L2>path,
+#L3>path,
+#MZ>polygon,
+#KM>path,
+#OR>circle,
+#NO>circle {
+    cursor: pointer;
+    /*fill: #18BC9C !important;*/
+    opacity: 0.8;
+}
 #TPE:hover>path,
 #NTP:hover>path,
 #KL:hover>path,
@@ -30,7 +60,8 @@
 #OR:hover>circle,
 #NO:hover>circle {
     cursor: pointer;
-    fill: #18BC9C !important;
+    /*fill: #18BC9C !important;*/
+    opacity: 1;
 }
 
 #OR:hover>text,
@@ -67,7 +98,8 @@
 #OR:active>circle,
 #NO:active>circle {
     cursor: pointer;
-    fill: #128f76 !important;
+    /*fill: #128f76 !important;*/
+    opacity: 0.8;
 }
 [id^="T_"]{
     cursor: pointer;

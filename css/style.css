@@ -343,6 +343,9 @@ nav {
 /*img圖片照片樣式*/
 .ic-btn-outter a.btn{
     text-align: left!important;
+    overflow:hidden;
+    white-space:nowrap;
+    text-overflow: ellipsis;
 }
 .ic{
     width: 1em;
