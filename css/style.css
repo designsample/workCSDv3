@@ -314,6 +314,7 @@ nav {
     border-top-right-radius: 4px!important;
     
 }
+.tooltip > .tooltip-inner {width: 240px;}
 .searchArea-group .input-group .input-group-btn a.question{
     border-radius: 50%;
     padding: 5px;
@@ -620,6 +621,9 @@ img.politicalParty-card{
 
 .color-deep {
     color: #2C3E50;
+}
+.color-red {
+    color: red;
 }
 .badge-light {
     color: #212529;
