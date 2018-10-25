@@ -1,5 +1,46 @@
 //NavBar側邊開合功能
 
+var config = {
+  "TPE":{
+    "title":"臺北市立委(63)",
+    "name":["吳思瑤","姚文智","蔣萬安","李彥秀","林昶佐","蔣乃辛","費鴻泰","賴士葆"],
+    "number":["14","18","20","10","40","20","12","33"]
+  },
+  "OR":{
+    "title":"原住民立委(7)",
+    "name":["鄭天財","廖國棟","陳瑩","高金素梅","簡東明","孔文吉"],
+    "number":["11","12","22","8","5","3"]
+}
+}
+
+
+
+// "NTP":{
+  //   "title":"不分區立委(3)",
+  //   "name":["丁87中","王大明","裝傻"],
+  //   "number":["11","87","999"]
+  // },
+
+
+function addData(self,TargetName)
+{
+     $('#changeLW').closest('#lblk').removeClass('hidden');
+     
+   
+    var data = config[self.id]
+    var divTarget = document.getElementById("wrapperLW");
+    var htmlstr = "";
+    document.getElementById("changeLW").innerHTML = data.title;
+    for (var i = 0; i < data.name.length; i++) {
+        var loacldataName = data.name[i];
+        var loacldataNumber = data.number[i];
+        htmlstr +=`<a href="b5-2-legislator.html" class="list-group-item">${loacldataName}<span class="badge badge-light">${loacldataNumber}</span></a>`
+              
+    }
+    divTarget.innerHTML = htmlstr;
+}
+
+
 
 
 //tab mother 按鈕開合功能
