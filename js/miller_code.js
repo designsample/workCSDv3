@@ -1,4 +1,5 @@
-//NavBar側邊開合功能
+//b4-1點地圖出現候選人資料
+
 
 var config = {
   "TPE":{
@@ -6,10 +7,20 @@ var config = {
     "name":["吳思瑤","姚文智","蔣萬安","李彥秀","林昶佐","蔣乃辛","費鴻泰","賴士葆"],
     "number":["14","18","20","10","40","20","12","33"]
   },
+  "YEL":{
+    "title":"宜蘭縣立委(6)",
+    "name":["陳歐珀"],
+    "number":["6"]
+  },
+  "HL":{
+    "title":"花蓮縣立委(6)",
+    "name":["蕭美琴"],
+    "number":["6"]
+  },
   "OR":{
-    "title":"原住民立委(7)",
+    "title":"原住民立委(31)",
     "name":["鄭天財","廖國棟","陳瑩","高金素梅","簡東明","孔文吉"],
-    "number":["11","12","22","8","5","3"]
+    "number":["5","6","6","8","4","3"]
 }
 }
 
@@ -39,9 +50,6 @@ function addData(self,TargetName)
     }
     divTarget.innerHTML = htmlstr;
 }
-
-
-
 
 //tab mother 按鈕開合功能
 function openCitymother(TargetID, ImageID) {
