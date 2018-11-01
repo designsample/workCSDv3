@@ -640,6 +640,31 @@ img.politicalParty-card{
     display: inline-block;
 }
 
+.inline{
+    display: inline;
+}
+.secreat{
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: normal;
+    text-align: center;
+    vertical-align: middle;
+    cursor: default;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    padding: 5px 10px;
+    font-size: 12px;
+    line-height: 1.5;
+    border-radius: 3px;
+    color: #fff;
+    background-color: #d9534f;
+    border-color: #d43f3a;
+}
 
 
 /*[設定]間距*/
@@ -922,8 +947,8 @@ img.politicalParty-card{
         margin-bottom: 2px;
         margin-right: 2px;
     }
-}
 
+}
 
 
 @media screen and (min-width: 768px) {
