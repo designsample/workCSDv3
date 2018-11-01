@@ -119,7 +119,7 @@
         height: auto;
     }
     [id^="T_"]{
-    font-size: 28px;
+    font-size: 18px;
     fill: #2C3E50;
 }
 [id^="T_"]:hover{
