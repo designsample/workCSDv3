@@ -1135,6 +1135,7 @@ img.politicalParty-card{
 .rwd-table td {
     text-align: left;
     margin-left: 7em;
+    min-height: 25px;
 }
 
 .rwd-table th,
