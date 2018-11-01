@@ -28,7 +28,7 @@
     <nav class="navbar navbar-light bg-header" role="navigation">
         <div class="container container-CSD">
             <div class="navbar-header">
-                <h1 class="logo m-0"><a class="navbar-brand" href="index.html"><img id="logoImg" alt="法人科專資訊整合平台logo" src="img/logo.png"></a></h1>
+                <h1 class="logo m-0"><a class="navbar-brand" href="b2-1-search.html"><img id="logoImg" alt="法人科專資訊整合平台logo" src="img/logo.png"></a></h1>
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
                     <span class="sr-only">主功能列</span>
                     <span class="glyphicon glyphicon-menu-hamburger"></span>
@@ -39,7 +39,7 @@
             <div class="collapse navbar-collapse navbar-ex1-collapse wrapper-menu">
                 <!-- 主選單 -->
                 <ul class="nav navbar-nav navbar-right main-menu">
-                    <li><a href="index.html"><span class="glyphicon glyphicon-home"></span>首頁</a></li>
+                    <li><a href="b2-1-search.html"><span class="glyphicon glyphicon-home"></span>首頁</a></li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-briefcase"></span>關注議題<b class="caret"></b></a>
                         <ul class="dropdown-menu">
@@ -48,34 +48,9 @@
                             <li><a href="b4-1-analysis.html">議題分析</a></li>
                         </ul>
                     </li>
-                    <!-- <li><a href=""><span class="glyphicon glyphicon-dashboard"></span>DASHBOARD</a></li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-question-sign"></span>使用手冊<b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="">操作手冊</a></li>
-                        </ul>
-                    </li> -->
                     <li>
                         <a href=""><span class="glyphicon glyphicon-question-sign"></span>操作手冊</a>
                     </li>
-                    <!-- <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-flash"></span>研發成果<b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="">焦點成果</a></li>
-                            <li><a href="">成果查詢</a></li>
-                            <li><a href="">成果分析</a></li>
-                            <li><a href="">產業應用</a></li>
-                            <li><a href="">廠商專區</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-cog"></span>後台管理<b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="index.html"><img class="media-object img-round" src="img/ic-head.png" alt="個人照片" height="36px" width="36px" style="display: inline-block;">帳戶管理</a></li>
-                            <li><a href="http://59.120.40.187/html/tdp/manage/p2.html">系統管理</a></li>
-                            <li><a href="index.html">登出</a></li>
-                        </ul>
-                    </li> -->
                     <li>
                         <div class="btn-group btn-group-toggle font-sizeGroup" data-toggle="buttons">
                             <label class="btn btn-info btn-sm">
@@ -89,14 +64,6 @@
                             </label>
                         </div>
                     </li>
-                    <!-- <li class="dropdown">   
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-eye-open">&ensp;</span>大項次 
-                            <b class="caret"></b></a>   
-                        <ul class="dropdown-menu">
-                            <li><a href="">次項目</a></li>
-                            <li><a href="">次項目</a></li>
-                        </ul>
-                    </li> -->
                 </ul>
             </div>
             <!-- 手機隱藏選單區結束 -->
@@ -167,8 +134,8 @@
                                                     <div class="col-xs-12 col-lg-12">
                                                         <div class="form-group col-xs-12 p-0">
                                                             <label for="yearA" class="control-label col-xs-4 col-md-2 p-0">屆次</label>
-                                                            <div class="form-inline inline-block col-xs-8 col-md-10">
-                                                                <select title="yearA" class="from-control col-xs-12 col-md-5">
+                                                            <div class="form-inline inline-block col-xs-8 col-md-10 p-0">
+                                                                <select title="yearA" class="from-control col-xs-5 col-md-5 col-lg-2">
                                                                     <option value="9" selected="selected">9</option>
                                                                     <option value="8">8</option>
                                                                     <option value="7">7</option>
@@ -179,10 +146,10 @@
                                                                     <option value="2">2</option>
                                                                     <option value="1">1</option>
                                                                 </select>
-                                                                <div class="form-inline inline-block text-center col-xs-12 col-md-2">
+                                                                <div class="form-inline inline-block text-center col-xs-2 col-md-2 p-0">
                                                                     <label class="">~</label>
                                                                 </div>
-                                                                <select title="yearB" class="from-control col-xs-12 col-md-5">
+                                                                <select title="yearB" class="from-control col-xs-5 col-md-5 col-lg-2">
                                                                     <option value="9" selected="selected">9</option>
                                                                     <option value="8">8</option>
                                                                     <option value="7">7</option>
@@ -198,17 +165,16 @@
                                                     </div>
                                                     <div class="col-xs-12 col-lg-12">
                                                         <div class="form-group col-xs-12 p-0">
-                                                            <label for="issueTypeA" class="control-label col-xs-4 col-md-2 p-0">議題類別</label>
-                                                            <div class="form-inline inline-block col-xs-8 col-md-10">
-                                                                <div class="form-group"><input type="checkbox" id="a1" title="部次長承諾事項" checked><label for="a1" class="">部次長承諾事項</label></div>
-                                                                <div class="form-group"><input type="checkbox" id="a2" title="立法委員請託事項/洽索資料" checked><label for="a2" class="">立法委員請託事項/洽索資料</label></div>
-                                                                <div class="form-group"><input type="checkbox" id="a3" title="委員會臨時提案" checked><label for="a3" class="">委員會臨時提案</label></div>
-                                                                <div class="form-group"><input type="checkbox" id="a4" title="國會輿情" checked><label for="a4" class="">國會輿情</label></div>
+                                                            <label for="issueTypeA" class="control-label col-xs-12 col-md-2 p-0">議題類別</label>
+                                                            <div class="form-inline inline-block col-xs-12 col-md-10">
+                                                                <div class="form-group"><input type="checkbox" id="a1" title="部次長承諾事項" checked><label for="a1" class="inline">部次長承諾事項</label></div>
+                                                                <div class="form-group"><input type="checkbox" id="a2" title="立法委員請託事項/洽索資料" checked><label for="a2" class="inline">立法委員請託事項/洽索資料</label></div>
+                                                                <div class="form-group"><input type="checkbox" id="a3" title="委員會臨時提案" checked><label for="a3" class="inline">委員會臨時提案</label></div>
+                                                                <div class="form-group"><input type="checkbox" id="a4" title="國會輿情" checked><label for="a4" class="inline">國會輿情</label></div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div class="col-xs-12 pull-right">
-                                                        <!-- <a href="#searchResaultA" class="btn btn-info pull-right" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="searchResaultA">查詢</a> -->
                                                         <a href="#searchResaultA" aria-controls="searchResaultA" role="tab" data-toggle="tab" class="btn btn-info pull-right">查詢</a>
                                                     </div>
                                                 </div>
@@ -218,8 +184,8 @@
                                                     <div class="col-xs-12 col-lg-12">
                                                         <div class="form-group col-xs-12 p-0">
                                                             <label for="yearC" class="control-label col-xs-4 col-md-2 p-0">屆次</label>
-                                                            <div class="form-inline inline-block col-xs-8 col-md-10">
-                                                                <select title="yearC" class="from-control col-xs-12 col-md-5">
+                                                            <div class="form-inline inline-block col-xs-8 col-md-10 p-0">
+                                                                <select title="yearC" class="from-control col-xs-5 col-md-5 col-lg-2">
                                                                     <option value="9" selected="selected">9</option>
                                                                     <option value="8">8</option>
                                                                     <option value="7">7</option>
@@ -230,10 +196,10 @@
                                                                     <option value="2">2</option>
                                                                     <option value="1">1</option>
                                                                 </select>
-                                                                <div class="form-inline inline-block text-center col-xs-12 col-md-2">
+                                                                <div class="form-inline inline-block text-center col-xs-2 col-md-2 p-0">
                                                                     <label class="">~</label>
                                                                 </div>
-                                                                <select title="yearD" class="from-control col-xs-12 col-md-5">
+                                                                <select title="yearD" class="from-control col-xs-5 col-md-5 col-lg-2">
                                                                     <option value="9" selected="selected">9</option>
                                                                     <option value="8">8</option>
                                                                     <option value="7">7</option>
@@ -249,12 +215,12 @@
                                                     </div>
                                                     <div class="col-xs-12 col-lg-12">
                                                         <div class="form-group col-xs-12 p-0">
-                                                            <label for="issueTypeB" class="control-label col-xs-4 col-md-2 p-0">議題類別</label>
-                                                            <div class="form-inline inline-block col-xs-8 col-md-10">
-                                                                <div class="form-group"><input type="checkbox" id="b1" title="部次長承諾事項" checked><label for="b1" class="">部次長承諾事項</label></div>
-                                                                <div class="form-group"><input type="checkbox" id="b2" title="立法委員請託事項/洽索資料" checked><label for="b2" class="">立法委員請託事項/洽索資料</label></div>
-                                                                <div class="form-group"><input type="checkbox" id="b3" title="委員會臨時提案" checked><label for="b3" class="">委員會臨時提案</label></div>
-                                                                <div class="form-group"><input type="checkbox" id="b4" title="國會輿情" checked><label for="b4" class="">國會輿情</label></div>
+                                                            <label for="issueTypeB" class="control-label col-xs-12 col-md-2 p-0">議題類別</label>
+                                                            <div class="form-inline inline-block col-xs-12 col-md-10">
+                                                                <div class="form-group"><input type="checkbox" id="b1" title="部次長承諾事項" checked><label for="b1" class="inline">部次長承諾事項</label></div>
+                                                                <div class="form-group"><input type="checkbox" id="b2" title="立法委員請託事項/洽索資料" checked><label for="b2" class="inline">立法委員請託事項/洽索資料</label></div>
+                                                                <div class="form-group"><input type="checkbox" id="b3" title="委員會臨時提案" checked><label for="b3" class="inline">委員會臨時提案</label></div>
+                                                                <div class="form-group"><input type="checkbox" id="b4" title="國會輿情" checked><label for="b4" class="inline">國會輿情</label></div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -269,8 +235,8 @@
                                                     <div class="col-xs-12 col-lg-12">
                                                         <div class="form-group col-xs-12 p-0">
                                                             <label for="yearA" class="control-label col-xs-4 col-md-2 p-0">屆次</label>
-                                                            <div class="form-inline inline-block col-xs-8 col-md-10">
-                                                                <select title="yearA" class="from-control col-xs-12 col-md-5">
+                                                            <div class="form-inline inline-block col-xs-8 col-md-10 p-0">
+                                                                <select title="yearA" class="from-control col-xs-5 col-md-5 col-lg-2">
                                                                     <option value="9" selected="selected">9</option>
                                                                     <option value="8">8</option>
                                                                     <option value="7">7</option>
@@ -281,10 +247,10 @@
                                                                     <option value="2">2</option>
                                                                     <option value="1">1</option>
                                                                 </select>
-                                                                <div class="form-inline inline-block text-center col-xs-12 col-md-2">
+                                                                <div class="form-inline inline-block text-center col-xs-2 col-md-2 p-0">
                                                                     <label class="">~</label>
                                                                 </div>
-                                                                <select title="yearB" class="from-control col-xs-12 col-md-5">
+                                                                <select title="yearB" class="from-control col-xs-5 col-md-5 col-lg-2">
                                                                     <option value="9" selected="selected">9</option>
                                                                     <option value="8">8</option>
                                                                     <option value="7">7</option>
@@ -300,12 +266,12 @@
                                                     </div>
                                                     <div class="col-xs-12 col-lg-12">
                                                         <div class="form-group col-xs-12 p-0">
-                                                            <label for="issueTypeC" class="control-label col-xs-4 col-md-2 p-0">議題類別</label>
-                                                            <div class="form-inline inline-block col-xs-8 col-md-10">
-                                                                <div class="form-group"><input type="checkbox" id="c1" title="部次長承諾事項" checked><label for="c1" class="">部次長承諾事項</label></div>
-                                                                <div class="form-group"><input type="checkbox" id="c2" title="立法委員請託事項/洽索資料" checked><label for="c2" class="">立法委員請託事項/洽索資料</label></div>
-                                                                <div class="form-group"><input type="checkbox" id="c3" title="委員會臨時提案" checked><label for="c3" class="">委員會臨時提案</label></div>
-                                                                <div class="form-group"><input type="checkbox" id="c4" title="國會輿情" checked><label for="c4" class="">國會輿情</label></div>
+                                                            <label for="issueTypeC" class="control-label col-xs-12 col-md-2 p-0">議題類別</label>
+                                                            <div class="form-inline inline-block col-xs-12 col-md-10">
+                                                                <div class="form-group"><input type="checkbox" id="c1" title="部次長承諾事項" checked><label for="c1" class="inline">部次長承諾事項</label></div>
+                                                                <div class="form-group"><input type="checkbox" id="c2" title="立法委員請託事項/洽索資料" checked><label for="c2" class="inline">立法委員請託事項/洽索資料</label></div>
+                                                                <div class="form-group"><input type="checkbox" id="c3" title="委員會臨時提案" checked><label for="c3" class="inline">委員會臨時提案</label></div>
+                                                                <div class="form-group"><input type="checkbox" id="c4" title="國會輿情" checked><label for="c4" class="inline">國會輿情</label></div>
                                                             </div>
                                                         </div>
                                                     </div>
