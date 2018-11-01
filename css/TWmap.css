@@ -115,8 +115,9 @@
 
 @media screen and (max-width: 767px) {
     #TWmap {
-        width: 100%;
+        width: 120%;
         height: auto;
+        margin-left: -20px;
     }
     [id^="T_"]{
     font-size: 18px;
