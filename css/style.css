@@ -949,7 +949,11 @@ img.politicalParty-card{
     }
     .tabSearchArea2
     {
-        padding: 40px 15px 0 15px;}
+        padding: 40px 15px 0 15px;
+    }
+    #committeeSort a.h4{
+        padding-right: 0;
+    }
 
 }
 
