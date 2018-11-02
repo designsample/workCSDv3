@@ -951,7 +951,7 @@ img.politicalParty-card{
     {
         padding: 40px 15px 0 15px;
     }
-    #committeeSort a.h4{
+    #committeeSort a.h4, #citySort>.tab-pane>.img-searchCommittee>div>a.h4,#groupCommittee a.h4{
         padding-right: 0;
     }
 
